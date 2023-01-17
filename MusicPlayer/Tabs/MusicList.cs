@@ -81,10 +81,20 @@ namespace MusicPlayer.Tabs
         }
 
 
-        public void musicplay()
+        public async Task musicplay()
         {
+            var tcs = new TaskCompletionSource<bool>();
+            player.PlayStateChange += (newState) =>
+            {
+                if (newState == (int)WMPPlayState.wmppsReady)
+                {
+                    tcs.TrySetResult(true);
+                }
+            };
             player.controls.play();
+            await tcs.Task;
         }
+    
         public void changeVolume(int volume)
         {
             player.settings.volume = volume;
@@ -169,6 +179,8 @@ namespace MusicPlayer.Tabs
                     songs.AddLast(f1.FullName);
             }
 
+            mainpage.guna2ImageButton1.Enabled = true;
+            mainpage.guna2ImageButton2.Enabled= true;
         }
         public void musicChanging(String newsong)
         {
