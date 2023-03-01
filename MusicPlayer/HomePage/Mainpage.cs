@@ -21,6 +21,7 @@ namespace MusicPlayer.HomePage
         private FirstPage firstpage;
         private Home homepage;
         private Form activeform = null;
+        private YoutubePlaylist ytbPlaylist;
         public MusicList musiclist { get; }
         private YoutubeSearch ytbsearch;
 
@@ -30,6 +31,7 @@ namespace MusicPlayer.HomePage
             this.firstpage = firstpage;
             homepage = new Home();
             musiclist = new MusicList(this, homepage);
+            ytbPlaylist = new YoutubePlaylist(musiclist);
             ytbsearch = new YoutubeSearch(musiclist);
             showForm(homepage);
 
@@ -216,6 +218,11 @@ namespace MusicPlayer.HomePage
         {
             YoutubeToMP3 ytbToMp3 = new YoutubeToMP3();
             showForm(ytbToMp3);
+        }
+
+        private void guna2GradientButton7_Click(object sender, EventArgs e)
+        {
+            showForm(ytbPlaylist);
         }
     }
 }

@@ -14,7 +14,9 @@ namespace MusicPlayer.Tabs
         public string musicname { get; set; }
         public LinkedList<String> songs { get; set; }
         public int playingSong { get; set; }
+#pragma warning disable CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider declaring as nullable.
         public MusicList(Mainpage mp, Home home)
+#pragma warning restore CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider declaring as nullable.
         {
             InitializeComponent();
             player=new WindowsMediaPlayer();
@@ -51,12 +53,10 @@ namespace MusicPlayer.Tabs
         public void changeHomeForm()
         {
             mainpage.showForm(home);
-
         }
         public void changeimgVisual(String musicname)
         {
             home.imgVisualiza.Load(ytb.thumbnail(ytb.singlemusicID(musicname)));
-
         }
         public void musicstop()
         {
@@ -104,6 +104,7 @@ namespace MusicPlayer.Tabs
             if (playingSong > 0)
                 playingSong--;
             else playingSong = songs.Count - 1;
+
             player.URL = songs.ElementAt(playingSong);
             musicname = musicListTable.Rows[playingSong].Cells[2].Value.ToString();
             home.playingSongLabel.Text = musicname;

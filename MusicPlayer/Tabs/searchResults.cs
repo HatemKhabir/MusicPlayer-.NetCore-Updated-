@@ -1,4 +1,5 @@
-﻿using YoutubeExplode;
+﻿using MusicPlayer.HomePage;
+using YoutubeExplode;
 using YoutubeExplode.Videos.Streams;
 
 
@@ -10,15 +11,18 @@ namespace MusicPlayer.Tabs
         public string title { get; set; }
         public string duration { get; set; }
         public string thumbnailURL { get; set; }
-        private MusicList mp;
+        private MusicList ml;
         private YoutubeAPI ytb = new YoutubeAPI();
-        public searchResults(MusicList mp)
+       
+
+        public searchResults(MusicList ml)
         {
             InitializeComponent();
-            this.mp = mp;
+            this.ml = ml;
+            
         }
         public void changeImage(String musicname)
-        {
+        {if (thumbnailURL!="")
             this.videoThumbnail.Load(thumbnailURL);
             this.videoName.Text = musicname;
             this.videoDuration.Text = duration;
@@ -46,10 +50,6 @@ namespace MusicPlayer.Tabs
                 }
             }
 
-
-
-
-
         }
 
         //Play as mp3 button
@@ -59,11 +59,16 @@ namespace MusicPlayer.Tabs
             var streamManifest = await youtube.Videos.Streams.GetManifestAsync("https://youtube.com/watch?v=" + musicid);
             var streamInfo = streamManifest.GetAudioOnlyStreams().GetWithHighestBitrate();
             var stream = await youtube.Videos.Streams.GetAsync(streamInfo);
-            mp.player.URL = streamInfo.Url;
-            mp.changeLabelsText(thumbnailURL, ytb.VideoName(musicid));
-            mp.changeHomeForm();
+            ml.player.URL = streamInfo.Url;
+            ml.changeLabelsText(thumbnailURL, ytb.VideoName(musicid));
+           
+            ml.changeHomeForm();
 
         }
 
+        private void searchResults_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

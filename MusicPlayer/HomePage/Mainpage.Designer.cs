@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges23 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges24 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges17 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges18 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
@@ -47,37 +47,28 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges15 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges17 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges18 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges28 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges29 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges23 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges24 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges25 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges26 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges27 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges19 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges20 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges21 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges22 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges34 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges35 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges29 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges30 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges31 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges32 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges33 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges25 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges26 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges27 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges28 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             this.siticoneGradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.guna2GradientButton11 = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.youtubeToMp3 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2GradientButton4 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.panel2 = new System.Windows.Forms.Panel();
             this.guna2GradientButton3 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2GradientButton2 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.guna2GradientButton8 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2GradientButton7 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2GradientButton5 = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.guna2GradientButton6 = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.SpotifyToMp3 = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.guna2GradientButton11 = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.youtubeToMp3 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2GradientButton1 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
@@ -98,34 +89,96 @@
             this.guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(this.components);
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.siticoneGradientPanel1.SuspendLayout();
+            this.panel4.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
-            this.panel4.SuspendLayout();
             this.guna2GradientPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // siticoneGradientPanel1
             // 
+            this.siticoneGradientPanel1.Controls.Add(this.panel4);
             this.siticoneGradientPanel1.Controls.Add(this.guna2GradientButton4);
             this.siticoneGradientPanel1.Controls.Add(this.panel2);
             this.siticoneGradientPanel1.Controls.Add(this.panel3);
-            this.siticoneGradientPanel1.Controls.Add(this.panel4);
             this.siticoneGradientPanel1.Controls.Add(this.guna2GradientButton1);
-            this.siticoneGradientPanel1.CustomizableEdges = customizableEdges23;
+            this.siticoneGradientPanel1.CustomizableEdges = customizableEdges17;
             this.siticoneGradientPanel1.FillColor = System.Drawing.Color.PowderBlue;
             this.siticoneGradientPanel1.FillColor2 = System.Drawing.SystemColors.ButtonHighlight;
             this.siticoneGradientPanel1.Location = new System.Drawing.Point(0, 14);
             this.siticoneGradientPanel1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.siticoneGradientPanel1.Name = "siticoneGradientPanel1";
-            this.siticoneGradientPanel1.ShadowDecoration.CustomizableEdges = customizableEdges24;
+            this.siticoneGradientPanel1.ShadowDecoration.CustomizableEdges = customizableEdges18;
             this.siticoneGradientPanel1.Size = new System.Drawing.Size(205, 448);
             this.siticoneGradientPanel1.TabIndex = 0;
+            // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.guna2GradientButton11);
+            this.panel4.Controls.Add(this.youtubeToMp3);
+            this.panel4.Location = new System.Drawing.Point(0, 207);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.panel4.MaximumSize = new System.Drawing.Size(212, 87);
+            this.panel4.MinimumSize = new System.Drawing.Size(212, 51);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(212, 51);
+            this.panel4.TabIndex = 6;
+            // 
+            // guna2GradientButton11
+            // 
+            this.guna2GradientButton11.CustomBorderColor = System.Drawing.Color.WhiteSmoke;
+            this.guna2GradientButton11.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 3);
+            this.guna2GradientButton11.CustomizableEdges = customizableEdges1;
+            this.guna2GradientButton11.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2GradientButton11.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2GradientButton11.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2GradientButton11.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2GradientButton11.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2GradientButton11.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guna2GradientButton11.FillColor = System.Drawing.Color.LightSkyBlue;
+            this.guna2GradientButton11.FillColor2 = System.Drawing.Color.Gainsboro;
+            this.guna2GradientButton11.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.guna2GradientButton11.ForeColor = System.Drawing.Color.White;
+            this.guna2GradientButton11.Image = global::MusicPlayer.Properties.Resources.download;
+            this.guna2GradientButton11.ImageOffset = new System.Drawing.Point(-7, 0);
+            this.guna2GradientButton11.Location = new System.Drawing.Point(0, 0);
+            this.guna2GradientButton11.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.guna2GradientButton11.Name = "guna2GradientButton11";
+            this.guna2GradientButton11.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            this.guna2GradientButton11.Size = new System.Drawing.Size(212, 52);
+            this.guna2GradientButton11.TabIndex = 2;
+            this.guna2GradientButton11.Text = "MP3 Downloader";
+            this.guna2GradientButton11.Click += new System.EventHandler(this.MP3Downloader);
+            // 
+            // youtubeToMp3
+            // 
+            this.youtubeToMp3.CustomBorderColor = System.Drawing.Color.WhiteSmoke;
+            this.youtubeToMp3.CustomizableEdges = customizableEdges3;
+            this.youtubeToMp3.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.youtubeToMp3.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.youtubeToMp3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.youtubeToMp3.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.youtubeToMp3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.youtubeToMp3.FillColor = System.Drawing.Color.PaleTurquoise;
+            this.youtubeToMp3.FillColor2 = System.Drawing.Color.Teal;
+            this.youtubeToMp3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.youtubeToMp3.ForeColor = System.Drawing.Color.White;
+            this.youtubeToMp3.Image = global::MusicPlayer.Properties.Resources.youtube;
+            this.youtubeToMp3.ImageOffset = new System.Drawing.Point(-10, 0);
+            this.youtubeToMp3.Location = new System.Drawing.Point(0, 48);
+            this.youtubeToMp3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.youtubeToMp3.Name = "youtubeToMp3";
+            this.youtubeToMp3.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            this.youtubeToMp3.Size = new System.Drawing.Size(212, 39);
+            this.youtubeToMp3.TabIndex = 1;
+            this.youtubeToMp3.Text = "Youtube to MP3";
+            this.youtubeToMp3.Click += new System.EventHandler(this.youtubeToMp3_Click);
             // 
             // guna2GradientButton4
             // 
             this.guna2GradientButton4.CustomBorderColor = System.Drawing.Color.WhiteSmoke;
             this.guna2GradientButton4.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 3);
-            this.guna2GradientButton4.CustomizableEdges = customizableEdges1;
+            this.guna2GradientButton4.CustomizableEdges = customizableEdges5;
             this.guna2GradientButton4.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.guna2GradientButton4.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.guna2GradientButton4.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -140,7 +193,7 @@
             this.guna2GradientButton4.Location = new System.Drawing.Point(-1, 68);
             this.guna2GradientButton4.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.guna2GradientButton4.Name = "guna2GradientButton4";
-            this.guna2GradientButton4.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            this.guna2GradientButton4.ShadowDecoration.CustomizableEdges = customizableEdges6;
             this.guna2GradientButton4.Size = new System.Drawing.Size(210, 45);
             this.guna2GradientButton4.TabIndex = 7;
             this.guna2GradientButton4.Text = "Search";
@@ -163,7 +216,7 @@
             // 
             this.guna2GradientButton3.CustomBorderColor = System.Drawing.Color.WhiteSmoke;
             this.guna2GradientButton3.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 3);
-            this.guna2GradientButton3.CustomizableEdges = customizableEdges3;
+            this.guna2GradientButton3.CustomizableEdges = customizableEdges7;
             this.guna2GradientButton3.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.guna2GradientButton3.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.guna2GradientButton3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -179,7 +232,7 @@
             this.guna2GradientButton3.Location = new System.Drawing.Point(0, 0);
             this.guna2GradientButton3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.guna2GradientButton3.Name = "guna2GradientButton3";
-            this.guna2GradientButton3.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            this.guna2GradientButton3.ShadowDecoration.CustomizableEdges = customizableEdges8;
             this.guna2GradientButton3.Size = new System.Drawing.Size(212, 52);
             this.guna2GradientButton3.TabIndex = 2;
             this.guna2GradientButton3.Text = "Local Media";
@@ -189,7 +242,7 @@
             // guna2GradientButton2
             // 
             this.guna2GradientButton2.CustomBorderColor = System.Drawing.Color.WhiteSmoke;
-            this.guna2GradientButton2.CustomizableEdges = customizableEdges5;
+            this.guna2GradientButton2.CustomizableEdges = customizableEdges9;
             this.guna2GradientButton2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.guna2GradientButton2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.guna2GradientButton2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -202,7 +255,7 @@
             this.guna2GradientButton2.Location = new System.Drawing.Point(0, 48);
             this.guna2GradientButton2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.guna2GradientButton2.Name = "guna2GradientButton2";
-            this.guna2GradientButton2.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            this.guna2GradientButton2.ShadowDecoration.CustomizableEdges = customizableEdges10;
             this.guna2GradientButton2.Size = new System.Drawing.Size(212, 32);
             this.guna2GradientButton2.TabIndex = 1;
             this.guna2GradientButton2.Text = "Import Local Media";
@@ -210,45 +263,20 @@
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.guna2GradientButton8);
             this.panel3.Controls.Add(this.guna2GradientButton7);
             this.panel3.Controls.Add(this.guna2GradientButton5);
-            this.panel3.Controls.Add(this.guna2GradientButton6);
             this.panel3.Location = new System.Drawing.Point(0, 156);
             this.panel3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.panel3.MaximumSize = new System.Drawing.Size(212, 135);
-            this.panel3.MinimumSize = new System.Drawing.Size(212, 46);
+            this.panel3.MaximumSize = new System.Drawing.Size(212, 80);
+            this.panel3.MinimumSize = new System.Drawing.Size(212, 50);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(212, 50);
             this.panel3.TabIndex = 5;
             // 
-            // guna2GradientButton8
-            // 
-            this.guna2GradientButton8.CustomBorderColor = System.Drawing.Color.WhiteSmoke;
-            this.guna2GradientButton8.CustomizableEdges = customizableEdges7;
-            this.guna2GradientButton8.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2GradientButton8.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2GradientButton8.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2GradientButton8.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2GradientButton8.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2GradientButton8.FillColor = System.Drawing.Color.PaleTurquoise;
-            this.guna2GradientButton8.FillColor2 = System.Drawing.Color.Teal;
-            this.guna2GradientButton8.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.guna2GradientButton8.ForeColor = System.Drawing.Color.White;
-            this.guna2GradientButton8.Image = global::MusicPlayer.Properties.Resources.spotify;
-            this.guna2GradientButton8.ImageOffset = new System.Drawing.Point(-12, 0);
-            this.guna2GradientButton8.Location = new System.Drawing.Point(0, 103);
-            this.guna2GradientButton8.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.guna2GradientButton8.Name = "guna2GradientButton8";
-            this.guna2GradientButton8.ShadowDecoration.CustomizableEdges = customizableEdges8;
-            this.guna2GradientButton8.Size = new System.Drawing.Size(212, 32);
-            this.guna2GradientButton8.TabIndex = 4;
-            this.guna2GradientButton8.Text = "Spotify Playlist";
-            // 
             // guna2GradientButton7
             // 
             this.guna2GradientButton7.CustomBorderColor = System.Drawing.Color.WhiteSmoke;
-            this.guna2GradientButton7.CustomizableEdges = customizableEdges9;
+            this.guna2GradientButton7.CustomizableEdges = customizableEdges11;
             this.guna2GradientButton7.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.guna2GradientButton7.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.guna2GradientButton7.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -260,19 +288,20 @@
             this.guna2GradientButton7.ForeColor = System.Drawing.Color.White;
             this.guna2GradientButton7.Image = global::MusicPlayer.Properties.Resources.youtube;
             this.guna2GradientButton7.ImageOffset = new System.Drawing.Point(-10, 0);
-            this.guna2GradientButton7.Location = new System.Drawing.Point(0, 77);
+            this.guna2GradientButton7.Location = new System.Drawing.Point(0, 51);
             this.guna2GradientButton7.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.guna2GradientButton7.Name = "guna2GradientButton7";
-            this.guna2GradientButton7.ShadowDecoration.CustomizableEdges = customizableEdges10;
+            this.guna2GradientButton7.ShadowDecoration.CustomizableEdges = customizableEdges12;
             this.guna2GradientButton7.Size = new System.Drawing.Size(212, 29);
             this.guna2GradientButton7.TabIndex = 3;
             this.guna2GradientButton7.Text = "Youtube Playlist";
+            this.guna2GradientButton7.Click += new System.EventHandler(this.guna2GradientButton7_Click);
             // 
             // guna2GradientButton5
             // 
             this.guna2GradientButton5.CustomBorderColor = System.Drawing.Color.WhiteSmoke;
             this.guna2GradientButton5.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 3);
-            this.guna2GradientButton5.CustomizableEdges = customizableEdges11;
+            this.guna2GradientButton5.CustomizableEdges = customizableEdges13;
             this.guna2GradientButton5.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.guna2GradientButton5.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.guna2GradientButton5.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -288,126 +317,17 @@
             this.guna2GradientButton5.Location = new System.Drawing.Point(0, 0);
             this.guna2GradientButton5.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.guna2GradientButton5.Name = "guna2GradientButton5";
-            this.guna2GradientButton5.ShadowDecoration.CustomizableEdges = customizableEdges12;
+            this.guna2GradientButton5.ShadowDecoration.CustomizableEdges = customizableEdges14;
             this.guna2GradientButton5.Size = new System.Drawing.Size(212, 51);
             this.guna2GradientButton5.TabIndex = 2;
             this.guna2GradientButton5.Text = "Playlists";
             this.guna2GradientButton5.Click += new System.EventHandler(this.PlaylistButton);
             // 
-            // guna2GradientButton6
-            // 
-            this.guna2GradientButton6.CustomBorderColor = System.Drawing.Color.WhiteSmoke;
-            this.guna2GradientButton6.CustomizableEdges = customizableEdges13;
-            this.guna2GradientButton6.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2GradientButton6.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2GradientButton6.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2GradientButton6.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2GradientButton6.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2GradientButton6.FillColor = System.Drawing.Color.PaleTurquoise;
-            this.guna2GradientButton6.FillColor2 = System.Drawing.Color.Teal;
-            this.guna2GradientButton6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.guna2GradientButton6.ForeColor = System.Drawing.Color.White;
-            this.guna2GradientButton6.Image = global::MusicPlayer.Properties.Resources.file_management;
-            this.guna2GradientButton6.ImageOffset = new System.Drawing.Point(-15, 0);
-            this.guna2GradientButton6.Location = new System.Drawing.Point(0, 48);
-            this.guna2GradientButton6.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.guna2GradientButton6.Name = "guna2GradientButton6";
-            this.guna2GradientButton6.ShadowDecoration.CustomizableEdges = customizableEdges14;
-            this.guna2GradientButton6.Size = new System.Drawing.Size(212, 32);
-            this.guna2GradientButton6.TabIndex = 1;
-            this.guna2GradientButton6.Text = "Local Playlist";
-            // 
-            // panel4
-            // 
-            this.panel4.Controls.Add(this.SpotifyToMp3);
-            this.panel4.Controls.Add(this.guna2GradientButton11);
-            this.panel4.Controls.Add(this.youtubeToMp3);
-            this.panel4.Location = new System.Drawing.Point(0, 204);
-            this.panel4.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.panel4.MaximumSize = new System.Drawing.Size(212, 108);
-            this.panel4.MinimumSize = new System.Drawing.Size(212, 51);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(212, 51);
-            this.panel4.TabIndex = 6;
-            // 
-            // SpotifyToMp3
-            // 
-            this.SpotifyToMp3.CustomBorderColor = System.Drawing.Color.WhiteSmoke;
-            this.SpotifyToMp3.CustomizableEdges = customizableEdges15;
-            this.SpotifyToMp3.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.SpotifyToMp3.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.SpotifyToMp3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.SpotifyToMp3.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.SpotifyToMp3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.SpotifyToMp3.FillColor = System.Drawing.Color.PaleTurquoise;
-            this.SpotifyToMp3.FillColor2 = System.Drawing.Color.Teal;
-            this.SpotifyToMp3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.SpotifyToMp3.ForeColor = System.Drawing.Color.White;
-            this.SpotifyToMp3.Image = global::MusicPlayer.Properties.Resources.spotify;
-            this.SpotifyToMp3.ImageOffset = new System.Drawing.Point(-12, 0);
-            this.SpotifyToMp3.Location = new System.Drawing.Point(0, 77);
-            this.SpotifyToMp3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.SpotifyToMp3.Name = "SpotifyToMp3";
-            this.SpotifyToMp3.ShadowDecoration.CustomizableEdges = customizableEdges16;
-            this.SpotifyToMp3.Size = new System.Drawing.Size(212, 32);
-            this.SpotifyToMp3.TabIndex = 3;
-            this.SpotifyToMp3.Text = "Spotify to MP3";
-            // 
-            // guna2GradientButton11
-            // 
-            this.guna2GradientButton11.CustomBorderColor = System.Drawing.Color.WhiteSmoke;
-            this.guna2GradientButton11.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 3);
-            this.guna2GradientButton11.CustomizableEdges = customizableEdges17;
-            this.guna2GradientButton11.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2GradientButton11.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2GradientButton11.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2GradientButton11.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2GradientButton11.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2GradientButton11.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2GradientButton11.FillColor = System.Drawing.Color.LightSkyBlue;
-            this.guna2GradientButton11.FillColor2 = System.Drawing.Color.Gainsboro;
-            this.guna2GradientButton11.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.guna2GradientButton11.ForeColor = System.Drawing.Color.White;
-            this.guna2GradientButton11.Image = global::MusicPlayer.Properties.Resources.download;
-            this.guna2GradientButton11.ImageOffset = new System.Drawing.Point(-7, 0);
-            this.guna2GradientButton11.Location = new System.Drawing.Point(0, 0);
-            this.guna2GradientButton11.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.guna2GradientButton11.Name = "guna2GradientButton11";
-            this.guna2GradientButton11.ShadowDecoration.CustomizableEdges = customizableEdges18;
-            this.guna2GradientButton11.Size = new System.Drawing.Size(212, 52);
-            this.guna2GradientButton11.TabIndex = 2;
-            this.guna2GradientButton11.Text = "MP3 Downloader";
-            this.guna2GradientButton11.Click += new System.EventHandler(this.MP3Downloader);
-            // 
-            // youtubeToMp3
-            // 
-            this.youtubeToMp3.CustomBorderColor = System.Drawing.Color.WhiteSmoke;
-            this.youtubeToMp3.CustomizableEdges = customizableEdges19;
-            this.youtubeToMp3.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.youtubeToMp3.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.youtubeToMp3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.youtubeToMp3.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.youtubeToMp3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.youtubeToMp3.FillColor = System.Drawing.Color.PaleTurquoise;
-            this.youtubeToMp3.FillColor2 = System.Drawing.Color.Teal;
-            this.youtubeToMp3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.youtubeToMp3.ForeColor = System.Drawing.Color.White;
-            this.youtubeToMp3.Image = global::MusicPlayer.Properties.Resources.youtube;
-            this.youtubeToMp3.ImageOffset = new System.Drawing.Point(-10, 0);
-            this.youtubeToMp3.Location = new System.Drawing.Point(0, 48);
-            this.youtubeToMp3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.youtubeToMp3.Name = "youtubeToMp3";
-            this.youtubeToMp3.ShadowDecoration.CustomizableEdges = customizableEdges20;
-            this.youtubeToMp3.Size = new System.Drawing.Size(212, 32);
-            this.youtubeToMp3.TabIndex = 1;
-            this.youtubeToMp3.Text = "Youtube to MP3";
-            this.youtubeToMp3.Click += new System.EventHandler(this.youtubeToMp3_Click);
-            // 
             // guna2GradientButton1
             // 
             this.guna2GradientButton1.CustomBorderColor = System.Drawing.Color.WhiteSmoke;
             this.guna2GradientButton1.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 5);
-            this.guna2GradientButton1.CustomizableEdges = customizableEdges21;
+            this.guna2GradientButton1.CustomizableEdges = customizableEdges15;
             this.guna2GradientButton1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.guna2GradientButton1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.guna2GradientButton1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -422,7 +342,7 @@
             this.guna2GradientButton1.Location = new System.Drawing.Point(0, 0);
             this.guna2GradientButton1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.guna2GradientButton1.Name = "guna2GradientButton1";
-            this.guna2GradientButton1.ShadowDecoration.CustomizableEdges = customizableEdges22;
+            this.guna2GradientButton1.ShadowDecoration.CustomizableEdges = customizableEdges16;
             this.guna2GradientButton1.Size = new System.Drawing.Size(210, 70);
             this.guna2GradientButton1.TabIndex = 0;
             this.guna2GradientButton1.Text = "Home";
@@ -460,14 +380,14 @@
             this.guna2GradientPanel1.Controls.Add(this.guna2ImageButton3);
             this.guna2GradientPanel1.Controls.Add(this.guna2ImageButton2);
             this.guna2GradientPanel1.Controls.Add(this.guna2ImageButton1);
-            this.guna2GradientPanel1.CustomizableEdges = customizableEdges34;
+            this.guna2GradientPanel1.CustomizableEdges = customizableEdges28;
             this.guna2GradientPanel1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.guna2GradientPanel1.FillColor = System.Drawing.Color.PowderBlue;
             this.guna2GradientPanel1.FillColor2 = System.Drawing.SystemColors.ButtonHighlight;
             this.guna2GradientPanel1.Location = new System.Drawing.Point(0, 461);
             this.guna2GradientPanel1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.guna2GradientPanel1.Name = "guna2GradientPanel1";
-            this.guna2GradientPanel1.ShadowDecoration.CustomizableEdges = customizableEdges35;
+            this.guna2GradientPanel1.ShadowDecoration.CustomizableEdges = customizableEdges29;
             this.guna2GradientPanel1.Size = new System.Drawing.Size(933, 58);
             this.guna2GradientPanel1.TabIndex = 1;
             // 
@@ -530,7 +450,7 @@
             this.guna2ImageButton5.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.guna2ImageButton5.Name = "guna2ImageButton5";
             this.guna2ImageButton5.PressedState.ImageSize = new System.Drawing.Size(25, 25);
-            this.guna2ImageButton5.ShadowDecoration.CustomizableEdges = customizableEdges29;
+            this.guna2ImageButton5.ShadowDecoration.CustomizableEdges = customizableEdges23;
             this.guna2ImageButton5.Size = new System.Drawing.Size(34, 35);
             this.guna2ImageButton5.TabIndex = 5;
             this.guna2ImageButton5.Click += new System.EventHandler(this.VolumeButtonClick);
@@ -560,7 +480,7 @@
             this.guna2ImageButton4.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.guna2ImageButton4.Name = "guna2ImageButton4";
             this.guna2ImageButton4.PressedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.guna2ImageButton4.ShadowDecoration.CustomizableEdges = customizableEdges30;
+            this.guna2ImageButton4.ShadowDecoration.CustomizableEdges = customizableEdges24;
             this.guna2ImageButton4.Size = new System.Drawing.Size(44, 36);
             this.guna2ImageButton4.TabIndex = 3;
             this.guna2ImageButton4.Click += new System.EventHandler(this.PlayButtonClick);
@@ -578,7 +498,7 @@
             this.guna2ImageButton3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.guna2ImageButton3.Name = "guna2ImageButton3";
             this.guna2ImageButton3.PressedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.guna2ImageButton3.ShadowDecoration.CustomizableEdges = customizableEdges31;
+            this.guna2ImageButton3.ShadowDecoration.CustomizableEdges = customizableEdges25;
             this.guna2ImageButton3.Size = new System.Drawing.Size(44, 36);
             this.guna2ImageButton3.TabIndex = 2;
             this.guna2ImageButton3.Click += new System.EventHandler(this.PauseButtonClick);
@@ -597,7 +517,7 @@
             this.guna2ImageButton2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.guna2ImageButton2.Name = "guna2ImageButton2";
             this.guna2ImageButton2.PressedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.guna2ImageButton2.ShadowDecoration.CustomizableEdges = customizableEdges32;
+            this.guna2ImageButton2.ShadowDecoration.CustomizableEdges = customizableEdges26;
             this.guna2ImageButton2.Size = new System.Drawing.Size(44, 36);
             this.guna2ImageButton2.TabIndex = 1;
             this.guna2ImageButton2.Click += new System.EventHandler(this.PreviousButtonClick);
@@ -616,7 +536,7 @@
             this.guna2ImageButton1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.guna2ImageButton1.Name = "guna2ImageButton1";
             this.guna2ImageButton1.PressedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.guna2ImageButton1.ShadowDecoration.CustomizableEdges = customizableEdges33;
+            this.guna2ImageButton1.ShadowDecoration.CustomizableEdges = customizableEdges27;
             this.guna2ImageButton1.Size = new System.Drawing.Size(44, 33);
             this.guna2ImageButton1.TabIndex = 0;
             this.guna2ImageButton1.Click += new System.EventHandler(this.NextButtonClick);
@@ -625,26 +545,26 @@
             // 
             this.guna2ControlBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2ControlBox2.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MinimizeBox;
-            this.guna2ControlBox2.CustomizableEdges = customizableEdges25;
+            this.guna2ControlBox2.CustomizableEdges = customizableEdges19;
             this.guna2ControlBox2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(152)))), ((int)(((byte)(166)))));
             this.guna2ControlBox2.IconColor = System.Drawing.Color.White;
             this.guna2ControlBox2.Location = new System.Drawing.Point(849, -3);
             this.guna2ControlBox2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.guna2ControlBox2.Name = "guna2ControlBox2";
-            this.guna2ControlBox2.ShadowDecoration.CustomizableEdges = customizableEdges26;
+            this.guna2ControlBox2.ShadowDecoration.CustomizableEdges = customizableEdges20;
             this.guna2ControlBox2.Size = new System.Drawing.Size(44, 21);
             this.guna2ControlBox2.TabIndex = 4;
             // 
             // guna2ControlBox1
             // 
             this.guna2ControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2ControlBox1.CustomizableEdges = customizableEdges27;
+            this.guna2ControlBox1.CustomizableEdges = customizableEdges21;
             this.guna2ControlBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(152)))), ((int)(((byte)(166)))));
             this.guna2ControlBox1.IconColor = System.Drawing.Color.White;
             this.guna2ControlBox1.Location = new System.Drawing.Point(889, -3);
             this.guna2ControlBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.guna2ControlBox1.Name = "guna2ControlBox1";
-            this.guna2ControlBox1.ShadowDecoration.CustomizableEdges = customizableEdges28;
+            this.guna2ControlBox1.ShadowDecoration.CustomizableEdges = customizableEdges22;
             this.guna2ControlBox1.Size = new System.Drawing.Size(44, 21);
             this.guna2ControlBox1.TabIndex = 3;
             this.guna2ControlBox1.Click += new System.EventHandler(this.guna2ControlBox1_Click);
@@ -676,9 +596,9 @@
             this.Name = "Mainpage";
             this.Text = "Mainpage";
             this.siticoneGradientPanel1.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
-            this.panel4.ResumeLayout(false);
             this.guna2GradientPanel1.ResumeLayout(false);
             this.guna2GradientPanel1.PerformLayout();
             this.ResumeLayout(false);
@@ -693,14 +613,11 @@
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel1;
         private System.Windows.Forms.Panel formPanel;
         private System.Windows.Forms.Panel panel4;
-        private Guna.UI2.WinForms.Guna2GradientButton SpotifyToMp3;
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton11;
         private Guna.UI2.WinForms.Guna2GradientButton youtubeToMp3;
         private System.Windows.Forms.Panel panel3;
-        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton8;
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton7;
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton5;
-        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton6;
         private System.Windows.Forms.Panel panel2;
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton3;
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton2;

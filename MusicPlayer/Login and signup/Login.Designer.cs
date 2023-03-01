@@ -83,7 +83,7 @@
             this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.guna2TextBox1.Name = "guna2TextBox1";
             this.guna2TextBox1.PasswordChar = '\0';
-            this.guna2TextBox1.PlaceholderText = "Enter Your Email...";
+            this.guna2TextBox1.PlaceholderText = "Enter Your Username...";
             this.guna2TextBox1.SelectedText = "";
             this.guna2TextBox1.ShadowDecoration.CustomizableEdges = customizableEdges2;
             this.guna2TextBox1.Size = new System.Drawing.Size(223, 33);
@@ -121,9 +121,9 @@
             this.label2.Location = new System.Drawing.Point(26, 194);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(53, 18);
+            this.label2.Size = new System.Drawing.Size(83, 18);
             this.label2.TabIndex = 5;
-            this.label2.Text = "Email : ";
+            this.label2.Text = "Username : ";
             // 
             // label3
             // 

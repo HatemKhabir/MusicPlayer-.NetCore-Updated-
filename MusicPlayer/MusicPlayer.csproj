@@ -68,6 +68,8 @@
     <PackageReference Include="Google.Apis.Core" Version="1.58.0" />
     <PackageReference Include="Google.Apis.YouTube.v3" Version="1.58.0.2874" />
     <PackageReference Include="Guna.UI2.WinForms" Version="2.0.4" />
+    <PackageReference Include="SpotifyAPI.Web" Version="7.0.0" />
+    <PackageReference Include="SpotifyAPI.Web.Auth" Version="7.0.0" />
     <PackageReference Include="YoutubeExplode" Version="6.2.5" />
   </ItemGroup>
 
