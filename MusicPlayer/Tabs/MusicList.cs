@@ -13,6 +13,7 @@ namespace MusicPlayer.Tabs
         private List<String> ytbresults;
         public string musicname { get; set; }
         public LinkedList<String> songs { get; set; }
+        public List<string> songNames { get; set; }
         public int playingSong { get; set; }
 #pragma warning disable CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider declaring as nullable.
         public MusicList(Mainpage mp, Home home)
@@ -93,7 +94,10 @@ namespace MusicPlayer.Tabs
             else
                 playingSong = 0;
             player.URL = songs.ElementAt(playingSong);
+            if(musicListTable.Enabled==true)
             musicname = musicListTable.Rows[playingSong].Cells[2].Value.ToString();
+            else 
+                musicname =songNames.ElementAt(playingSong);
             home.playingSongLabel.Text = musicname;
             mainpage.playingSongLabel.Text = musicname;
             changeimgVisual(musicname);
@@ -106,7 +110,11 @@ namespace MusicPlayer.Tabs
             else playingSong = songs.Count - 1;
 
             player.URL = songs.ElementAt(playingSong);
-            musicname = musicListTable.Rows[playingSong].Cells[2].Value.ToString();
+
+            if (musicListTable.Enabled == true)
+                musicname = musicListTable.Rows[playingSong].Cells[2].Value.ToString();
+            else
+                musicname = songNames.ElementAt(playingSong); 
             home.playingSongLabel.Text = musicname;
             mainpage.playingSongLabel.Text = musicname;
             changeimgVisual(musicname);

@@ -9,6 +9,8 @@ namespace MusicPlayer.Tabs
     {
         public string musicid { get; set; }
         public string title { get; set; }
+        public int videoNumber { get; set; }
+        public string streaminfo { get; set; }
         public string duration { get; set; }
         public string thumbnailURL { get; set; }
         private MusicList ml;
@@ -61,8 +63,9 @@ namespace MusicPlayer.Tabs
             var stream = await youtube.Videos.Streams.GetAsync(streamInfo);
             ml.player.URL = streamInfo.Url;
             ml.changeLabelsText(thumbnailURL, ytb.VideoName(musicid));
-           
+            ml.playingSong = videoNumber;
             ml.changeHomeForm();
+            MessageBox.Show(ml.playingSong.ToString());
 
         }
 

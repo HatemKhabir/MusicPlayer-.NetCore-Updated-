@@ -141,8 +141,14 @@ namespace MusicPlayer
         }
         public String thumbnail(String musicID)
         {
-            return "https://img.youtube.com/vi/" + musicID + "/maxresdefault.jpg";
-
+            try
+            {
+                return "https://img.youtube.com/vi/" + musicID + "/maxresdefault.jpg";
+            }catch(Exception e)
+            {
+                MessageBox.Show("Errorr ! aleh ? mandroch . ");
+            }
+            return "";
         }
         public string VideoName(string musicId)
         {

@@ -32,7 +32,7 @@ namespace MusicPlayer.HomePage
             homepage = new Home();
             musiclist = new MusicList(this, homepage);
             ytbPlaylist = new YoutubePlaylist(musiclist);
-            ytbsearch = new YoutubeSearch(musiclist);
+            ytbsearch = new YoutubeSearch(this,musiclist);
             showForm(homepage);
 
         }
@@ -65,6 +65,7 @@ namespace MusicPlayer.HomePage
 
         private void importMediaButton(object sender, EventArgs e)
         {
+            musiclist.musicListTable.Enabled = true;
             showForm(musiclist);
         }
 
@@ -211,6 +212,7 @@ namespace MusicPlayer.HomePage
 
         private void SearchButton(object sender, EventArgs e)
         {
+            musiclist.musicListTable.Enabled= false;
             showForm(ytbsearch);
         }
 
