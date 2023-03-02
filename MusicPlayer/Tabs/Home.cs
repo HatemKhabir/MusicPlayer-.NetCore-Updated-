@@ -16,5 +16,10 @@ namespace MusicPlayer.Tabs
         {
             InitializeComponent();
         }
+
+        private void imgVisualiza_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

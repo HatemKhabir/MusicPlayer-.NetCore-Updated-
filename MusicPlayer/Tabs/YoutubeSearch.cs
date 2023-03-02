@@ -19,6 +19,7 @@ namespace MusicPlayer.Tabs
         private YoutubeAPI ytb = new YoutubeAPI();
         private MusicList ml;
         private Mainpage mp;
+        
         public YoutubeSearch(Mainpage mainpage,MusicList mp)
         {
             InitializeComponent();
@@ -53,7 +54,7 @@ namespace MusicPlayer.Tabs
             LinkedList<string> streamInfosList = new LinkedList<string>();
             for (int i = 0; i < musiclist.Count - 1; i++)
             {
-                searchResults results = new searchResults(ml)
+                searchResults results = new searchResults(ml,this)
                 {
                     musicid = musiclist.ElementAt(i),
                     title = musicTitle.ElementAt(i),

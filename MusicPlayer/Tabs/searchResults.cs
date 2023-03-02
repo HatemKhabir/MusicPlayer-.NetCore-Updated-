@@ -15,14 +15,23 @@ namespace MusicPlayer.Tabs
         public string thumbnailURL { get; set; }
         private MusicList ml;
         private YoutubeAPI ytb = new YoutubeAPI();
+        private YoutubeSearch search;
        
 
+        public searchResults(MusicList ml, YoutubeSearch sch)
+        {
+            InitializeComponent();
+            this.ml = ml;
+            this.search = sch;
+           
+        }
         public searchResults(MusicList ml)
         {
             InitializeComponent();
             this.ml = ml;
-            
+
         }
+
         public void changeImage(String musicname)
         {if (thumbnailURL!="")
             this.videoThumbnail.Load(thumbnailURL);
@@ -47,7 +56,15 @@ namespace MusicPlayer.Tabs
                     var filepath = SaveFileDialog.FileName;
 
                     // Download the stream to the selected file
-                    await youtube.Videos.Streams.DownloadAsync(streamInfo, filepath);
+                    var progress = new Progress<double>(p => search.ProgressBar1.Value = (int)(p * 100));
+                    try
+                    {
+                        await youtube.Videos.Streams.DownloadAsync(streamInfo, filepath, progress);
+
+                    }catch(Exception ex)
+                    {
+                        MessageBox.Show("wallah manaaref aleh , base lvideo is not found donc it's OUT OF MY HAND . ");
+                    }
                     MessageBox.Show("Download Finished , check : " + filepath);
                 }
             }
