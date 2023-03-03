@@ -39,14 +39,14 @@
             // nowPlayingLabel
             // 
             this.nowPlayingLabel.AutoSize = true;
-            this.nowPlayingLabel.BackColor = System.Drawing.Color.White;
+            this.nowPlayingLabel.BackColor = System.Drawing.Color.Transparent;
             this.nowPlayingLabel.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.nowPlayingLabel.Font = new System.Drawing.Font("Courier New", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.nowPlayingLabel.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.nowPlayingLabel.Location = new System.Drawing.Point(245, 516);
-            this.nowPlayingLabel.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.nowPlayingLabel.Location = new System.Drawing.Point(164, 385);
+            this.nowPlayingLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.nowPlayingLabel.Name = "nowPlayingLabel";
-            this.nowPlayingLabel.Size = new System.Drawing.Size(153, 21);
+            this.nowPlayingLabel.Size = new System.Drawing.Size(125, 17);
             this.nowPlayingLabel.TabIndex = 7;
             this.nowPlayingLabel.Text = "Now Playing -";
             this.nowPlayingLabel.Visible = false;
@@ -55,14 +55,14 @@
             // 
             this.playingSongLabel.AutoEllipsis = true;
             this.playingSongLabel.AutoSize = true;
-            this.playingSongLabel.BackColor = System.Drawing.Color.White;
+            this.playingSongLabel.BackColor = System.Drawing.Color.Transparent;
             this.playingSongLabel.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.playingSongLabel.Font = new System.Drawing.Font("Courier New", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.playingSongLabel.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.playingSongLabel.Location = new System.Drawing.Point(378, 516);
-            this.playingSongLabel.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.playingSongLabel.Location = new System.Drawing.Point(281, 385);
+            this.playingSongLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.playingSongLabel.Name = "playingSongLabel";
-            this.playingSongLabel.Size = new System.Drawing.Size(153, 21);
+            this.playingSongLabel.Size = new System.Drawing.Size(125, 17);
             this.playingSongLabel.TabIndex = 8;
             this.playingSongLabel.Text = "-   Song Name";
             this.playingSongLabel.Visible = false;
@@ -76,10 +76,10 @@
             this.imgVisualiza.Image = global::MusicPlayer.Properties.Resources.output_onlinegiftools;
             this.imgVisualiza.ImageRotate = 0F;
             this.imgVisualiza.Location = new System.Drawing.Point(0, 0);
-            this.imgVisualiza.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.imgVisualiza.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.imgVisualiza.Name = "imgVisualiza";
             this.imgVisualiza.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            this.imgVisualiza.Size = new System.Drawing.Size(832, 597);
+            this.imgVisualiza.Size = new System.Drawing.Size(728, 448);
             this.imgVisualiza.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.imgVisualiza.TabIndex = 9;
             this.imgVisualiza.TabStop = false;
@@ -87,14 +87,14 @@
             // 
             // Home
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(832, 597);
+            this.ClientSize = new System.Drawing.Size(728, 448);
             this.Controls.Add(this.nowPlayingLabel);
             this.Controls.Add(this.playingSongLabel);
             this.Controls.Add(this.imgVisualiza);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "Home";
             this.Text = "Home";
             ((System.ComponentModel.ISupportInitialize)(this.imgVisualiza)).EndInit();

@@ -55,9 +55,16 @@ namespace MusicPlayer.Tabs
         {
             mainpage.showForm(home);
         }
-        public void changeimgVisual(String musicname)
+        public async void changeimgVisual(String musicname)
         {
-            home.imgVisualiza.Load(ytb.thumbnail(ytb.singlemusicID(musicname)));
+            try
+            {
+                home.imgVisualiza.Load(ytb.thumbnail(ytb.singlemusicID(musicname)));
+            }catch(Exception e)
+            {
+                MessageBox.Show(e.Message);
+                await musicplay();
+            }
         }
         public void musicstop()
         {
@@ -75,10 +82,17 @@ namespace MusicPlayer.Tabs
                     tcs.TrySetResult(true);
                 }
             };
-            player.controls.play();
+            try
+            {
+                player.controls.play();
+            }catch(Exception ex)
+            {
+                   
+            }
             await tcs.Task;
+
         }
-    
+
         public void changeVolume(int volume)
         {
             player.settings.volume = volume;
@@ -174,10 +188,7 @@ namespace MusicPlayer.Tabs
             mainpage.guna2ImageButton1.Enabled = true;
             mainpage.guna2ImageButton2.Enabled= true;
         }
-        public void musicChanging(String newsong)
-        {
-            player.URL = newsong;
-        }
+      
 
         public void changeLabelsText(string thumbnailurl, string musicName)
         {
@@ -185,7 +196,7 @@ namespace MusicPlayer.Tabs
             home.playingSongLabel.Text = musicName;
             home.imgVisualiza.Load(thumbnailurl);
         }
-        private void Player_PlayStateChange(int newState)
+        private async void Player_PlayStateChange(int newState)
         {
             mainpage.nowPlayingLabel.Visible = true;
             mainpage.playingSongLabel.Visible = true;
@@ -199,11 +210,15 @@ namespace MusicPlayer.Tabs
                 mainpage.slider.Maximum = (int)player.currentMedia.duration;
                 mainpage.slider.Value = (int)player.controls.currentPosition;
             }
-            if (newState == (int)WMPPlayState.wmppsMediaEnded)
-                musicNext();
-            if (newState == (int)WMPPlayState.wmppsReady)
+            else if (newState == (int)WMPPlayState.wmppsStopped)
             {
-                musicplay();
+                await musicplay();
+            }
+            else if (newState == (int)WMPPlayState.wmppsMediaEnded)
+                musicNext();
+            else if (newState == (int)WMPPlayState.wmppsReady)
+            {
+                await musicplay();
             }
 
 

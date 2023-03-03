@@ -97,27 +97,32 @@ namespace MusicPlayer
         //retreiving singluar music id to get thumbnail for home page
         public string singlemusicID(String searchQuery)
         {
-
-            var searchListRequest = youtubeService.Search.List("snippet");
-            searchListRequest.Q = searchQuery; // Replace with your search term.
-            searchListRequest.MaxResults = 1;
-
-            // Call the search.list method to retrieve results matching the specified query term.
-            var searchListResponse = searchListRequest.Execute();
-
-
-
-            // Add each result to the appropriate list, and then display the lists of
-            // matching videos, channels, and playlists.
-
-            foreach (var searchResult in searchListResponse.Items)
+            try
             {
-                switch (searchResult.Id.Kind)
+                var searchListRequest = youtubeService.Search.List("snippet");
+                searchListRequest.Q = searchQuery; // Replace with your search term.
+                searchListRequest.MaxResults = 1;
+
+                // Call the search.list method to retrieve results matching the specified query term.
+                var searchListResponse = searchListRequest.Execute();
+
+
+
+                // Add each result to the appropriate list, and then display the lists of
+                // matching videos, channels, and playlists.
+
+                foreach (var searchResult in searchListResponse.Items)
                 {
-                    case "youtube#video":
-                        musicid = searchResult.Id.VideoId;
-                        break;
+                    switch (searchResult.Id.Kind)
+                    {
+                        case "youtube#video":
+                            musicid = searchResult.Id.VideoId;
+                            break;
+                    }
                 }
+            }catch(Exception ex)
+            {
+                MessageBox.Show("bellehi ken saret haja , maandi manaamel , enzel ok taw tetaada , merci");
             }
             return musicid;
         }

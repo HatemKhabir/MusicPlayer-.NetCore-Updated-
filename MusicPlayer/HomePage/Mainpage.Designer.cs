@@ -416,10 +416,10 @@
             // playingSongLabel
             // 
             this.playingSongLabel.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.playingSongLabel.Location = new System.Drawing.Point(71, 10);
+            this.playingSongLabel.Location = new System.Drawing.Point(73, 10);
             this.playingSongLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.playingSongLabel.Name = "playingSongLabel";
-            this.playingSongLabel.Size = new System.Drawing.Size(139, 42);
+            this.playingSongLabel.Size = new System.Drawing.Size(137, 42);
             this.playingSongLabel.TabIndex = 6;
             this.playingSongLabel.Text = ": Song Name";
             this.playingSongLabel.Visible = false;

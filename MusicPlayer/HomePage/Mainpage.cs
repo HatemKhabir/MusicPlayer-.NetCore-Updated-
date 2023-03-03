@@ -31,7 +31,7 @@ namespace MusicPlayer.HomePage
             this.firstpage = firstpage;
             homepage = new Home();
             musiclist = new MusicList(this, homepage);
-            ytbPlaylist = new YoutubePlaylist(musiclist);
+            ytbPlaylist = new YoutubePlaylist(musiclist,this);
             ytbsearch = new YoutubeSearch(this,musiclist);
             showForm(homepage);
 

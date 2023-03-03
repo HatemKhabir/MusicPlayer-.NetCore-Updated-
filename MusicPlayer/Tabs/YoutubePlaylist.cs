@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MusicPlayer.HomePage;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -22,13 +23,33 @@ namespace MusicPlayer.Tabs
         private List<string> musicTitle = new List<string>();
         private List<string> duration = new List<string>();
         private List<string> thumbnails = new List<string>();
-        public YoutubePlaylist(MusicList ml)
+        private LinkedList<string> streamInfoURL= new LinkedList<string>();
+        private Mainpage mainpage;
+       
+        public YoutubePlaylist(MusicList ml,Mainpage mp)
         {
             InitializeComponent();
             this.ml = ml;
+            this.mainpage= mp;
         }
+        private async Task<string> streamInfo(string videoId)
+        {
 
-        private void ListMusic_Click(object sender, EventArgs e)
+            try
+            {
+                var youtube = new YoutubeClient();
+                var streamManifest = await youtube.Videos.Streams.GetManifestAsync("https://youtube.com/watch?v=" + videoId);
+                var streamInfo = streamManifest.GetAudioOnlyStreams().GetWithHighestBitrate();
+                return streamInfo.Url;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                return "";
+            }
+            return null;
+        }
+        private async void ListMusic_Click(object sender, EventArgs e)
         {
             SearchResults.Controls.Clear();
           
@@ -42,12 +63,16 @@ namespace MusicPlayer.Tabs
                     title = musicTitle.ElementAt(i),
                     duration = ytb.duration(musiclist.ElementAt(i)),
                     thumbnailURL = thumbnails.ElementAt(i),
+                    streaminfo = await streamInfo(musiclist.ElementAt(i)),
                 };
                 results.changeImage(musicTitle[i]);
                 SearchResults.Controls.Add(results);
+                streamInfoURL.AddLast(results.streaminfo);
             }
-            MessageBox.Show("this is before more : " + musiclist.Count);
-
+            ml.songs = streamInfoURL;
+            ml.songNames = musicTitle;
+            mainpage.guna2ImageButton1.Enabled = true;
+            mainpage.guna2ImageButton2.Enabled = true;
         }
         private void LoadMore_Click(object sender, EventArgs e)
         {

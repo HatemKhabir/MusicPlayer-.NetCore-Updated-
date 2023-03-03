@@ -82,7 +82,6 @@ namespace MusicPlayer.Tabs
             ml.changeLabelsText(thumbnailURL, ytb.VideoName(musicid));
             ml.playingSong = videoNumber;
             ml.changeHomeForm();
-            MessageBox.Show(ml.playingSong.ToString());
 
         }
 
