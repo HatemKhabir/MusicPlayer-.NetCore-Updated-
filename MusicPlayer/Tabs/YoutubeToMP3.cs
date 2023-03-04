@@ -44,9 +44,12 @@ namespace MusicPlayer.Tabs
                                 mainpage.ProgressBar1.Value = (int)(p * 100);
                                 mainpage.ProgressBar1.Update();
                             });
+                            guna2PictureBox1.Image = Properties.Resources.giphy;
                             // Download the stream to the selected file
                             await youtube.Videos.Streams.DownloadAsync(streamInfo, filepath,progress);
                             MessageBox.Show("Download Finished , Location :  " + filepath);
+                            guna2PictureBox1.Image = Properties.Resources.ezgif_com_gif_maker__2_;
+
                         }
                     }
                 }catch(Exception ex)
