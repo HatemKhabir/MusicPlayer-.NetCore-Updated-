@@ -26,11 +26,12 @@ namespace MusicPlayer.Tabs
         private LinkedList<string> streamInfoURL= new LinkedList<string>();
         private Mainpage mainpage;
        
-        public YoutubePlaylist(MusicList ml,Mainpage mp)
+        public YoutubePlaylist(MusicList ml, Mainpage mp)
         {
             InitializeComponent();
             this.ml = ml;
-            this.mainpage= mp;
+            this.mainpage = mp;
+           
         }
         private async Task<string> streamInfo(string videoId)
         {
@@ -57,7 +58,7 @@ namespace MusicPlayer.Tabs
             musiclist = ytb.playlistVideoList(playListLink.Text, out musicTitle, out thumbnails);
             for (int i = 0; i < musiclist.Count; i++)
             {
-                searchResults results = new searchResults(ml)
+                searchResults results = new searchResults(ml,mainpage)
                 {
                     musicid = musiclist.ElementAt(i),
                     title = musicTitle.ElementAt(i),
@@ -81,7 +82,7 @@ namespace MusicPlayer.Tabs
             if (musiclist != null)
                 for (int i = 0; i < musiclist.Count; i++)
                 {
-                    searchResults results = new searchResults(ml)
+                    searchResults results = new searchResults(ml,mainpage)
                     {
                         musicid = musiclist.ElementAt(i),
                         title = musicTitle.ElementAt(i),
@@ -126,7 +127,11 @@ namespace MusicPlayer.Tabs
                             var filePath = Path.Combine(directory, fileName);
 
                             // Download the stream to the selected file
-                            var progressHandler = new Progress<double>(p => ProgressBar1.Value = (int)(p * 100));
+                            var progressHandler = new Progress<double>(p =>
+                            {
+                                mainpage.ProgressBar1.Value = (int)(p * 100);
+                                mainpage.ProgressBar1.Update();
+                            });
                             try
                             {
                                 await youtube.Videos.Streams.DownloadAsync(streamInfo, filePath, progressHandler);

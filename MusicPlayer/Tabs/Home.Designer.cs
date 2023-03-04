@@ -79,7 +79,7 @@
             this.imgVisualiza.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.imgVisualiza.Name = "imgVisualiza";
             this.imgVisualiza.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            this.imgVisualiza.Size = new System.Drawing.Size(728, 448);
+            this.imgVisualiza.Size = new System.Drawing.Size(728, 428);
             this.imgVisualiza.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.imgVisualiza.TabIndex = 9;
             this.imgVisualiza.TabStop = false;
@@ -89,7 +89,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(728, 448);
+            this.ClientSize = new System.Drawing.Size(728, 428);
             this.Controls.Add(this.nowPlayingLabel);
             this.Controls.Add(this.playingSongLabel);
             this.Controls.Add(this.imgVisualiza);

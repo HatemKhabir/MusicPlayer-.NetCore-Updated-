@@ -179,51 +179,63 @@ namespace MusicPlayer
             thumbnails = new List<string>();
             if (playlistLink.Contains("youtube"))
             {
-                var playlistid = playlistLink.Substring(playlistLink.IndexOf('=') + 1, playlistLink.Length - playlistLink.IndexOf('=') - 1);
-                var playlistItemsListRequest = youtubeService.PlaylistItems.List("snippet");
-                playlistItemsListRequest.MaxResults = 50;
-                playlistItemsListRequest.PlaylistId = playlistid;
-                var playlistItemsListResponse = playlistItemsListRequest.Execute();
-                nextPageToken = playlistItemsListResponse.NextPageToken;
+                try
+                {
+                    var playlistid = playlistLink.Substring(playlistLink.IndexOf('=') + 1, playlistLink.Length - playlistLink.IndexOf('=') - 1);
+                    var playlistItemsListRequest = youtubeService.PlaylistItems.List("snippet");
+                    playlistItemsListRequest.MaxResults = 50;
+                    playlistItemsListRequest.PlaylistId = playlistid;
+                    var playlistItemsListResponse = playlistItemsListRequest.Execute();
+                    nextPageToken = playlistItemsListResponse.NextPageToken;
 
-                for (int i = 0; i < playlistItemsListResponse.Items.Count; i++)
-                {                   
-                    PlaylistItem? playlistItem = playlistItemsListResponse.Items[i];
-                    videoIds.Add(playlistItem.Snippet.ResourceId.VideoId);
-                    if (playlistItem.Snippet.Thumbnails.Standard != null)
+                    for (int i = 0; i < playlistItemsListResponse.Items.Count; i++)
                     {
-                        thumbnails.Add(playlistItem.Snippet.Thumbnails.Standard.Url);
+                        PlaylistItem? playlistItem = playlistItemsListResponse.Items[i];
+                        videoIds.Add(playlistItem.Snippet.ResourceId.VideoId);
+                        if (playlistItem.Snippet.Thumbnails.Standard != null)
+                        {
+                            thumbnails.Add(playlistItem.Snippet.Thumbnails.Standard.Url);
+                        }
+                        else
+                        {
+                            thumbnails.Add("");
+                        }
+                        musicTitle.Add(playlistItem.Snippet.Title);
                     }
-                    else
-                    {
-                        thumbnails.Add("");
-                    }
-                    musicTitle.Add(playlistItem.Snippet.Title);
+                }catch(Exception ex)
+                {
+                    MessageBox.Show("ch9awlek thot lien yasla7 ? ");
                 }
-
             }
             else
             {
-                var playlistid = playlistLink;
-                var playlistItemsListRequest = youtubeService.PlaylistItems.List("snippet");
-                playlistItemsListRequest.MaxResults = 50;
-                playlistItemsListRequest.PlaylistId = playlistid;
-                var playlistItemsListResponse = playlistItemsListRequest.Execute();
-                nextPageToken = playlistItemsListResponse.NextPageToken;
-
-                for (int i = 0; i < playlistItemsListResponse.Items.Count; i++)
+                try
                 {
-                    PlaylistItem? playlistItem = playlistItemsListResponse.Items[i];
-                    videoIds.Add(playlistItem.Snippet.ResourceId.VideoId);
-                    if (playlistItem.Snippet.Thumbnails.Standard != null)
+                    var playlistid = playlistLink;
+                    var playlistItemsListRequest = youtubeService.PlaylistItems.List("snippet");
+                    playlistItemsListRequest.MaxResults = 50;
+                    playlistItemsListRequest.PlaylistId = playlistid;
+                    var playlistItemsListResponse = playlistItemsListRequest.Execute();
+                    nextPageToken = playlistItemsListResponse.NextPageToken;
+
+                    for (int i = 0; i < playlistItemsListResponse.Items.Count; i++)
                     {
-                        thumbnails.Add(playlistItem.Snippet.Thumbnails.Standard.Url);
+                        PlaylistItem? playlistItem = playlistItemsListResponse.Items[i];
+                        videoIds.Add(playlistItem.Snippet.ResourceId.VideoId);
+                        if (playlistItem.Snippet.Thumbnails.Standard != null)
+                        {
+                            thumbnails.Add(playlistItem.Snippet.Thumbnails.Standard.Url);
+                        }
+                        else
+                        {
+                            thumbnails.Add("");
+                        }
+                        musicTitle.Add(playlistItem.Snippet.Title);
                     }
-                    else
-                    {
-                        thumbnails.Add("");
-                    }
-                    musicTitle.Add(playlistItem.Snippet.Title);
+                }catch(Exception ex)
+                {
+                    MessageBox.Show("ch9awlek thot lien yasla7 ? ");
+
                 }
             }
             return videoIds;
@@ -231,6 +243,7 @@ namespace MusicPlayer
         }
         public List<string> playlistLoadNextPage(string playlistLink, out List<string> musicTitle, out List<string> thumbnails)
         {
+            
             List<string> videoIds = new List<string>();
             musicTitle = new List<string>();
             thumbnails = new List<string>();
@@ -241,54 +254,68 @@ namespace MusicPlayer
             }
             if (playlistLink.Contains("youtube"))
             {
-                var playlistid = playlistLink.Substring(playlistLink.IndexOf('=') + 1, playlistLink.Length - playlistLink.IndexOf('=') - 1);
-                var playlistItemsListRequest = youtubeService.PlaylistItems.List("snippet");
-                playlistItemsListRequest.MaxResults = 50;
-                playlistItemsListRequest.PlaylistId = playlistid;
-                playlistItemsListRequest.PageToken= nextPageToken;
-                var playlistItemsListResponse = playlistItemsListRequest.Execute();
-
-                for (int i = 0; i < playlistItemsListResponse.Items.Count; i++)
+                try
                 {
-                    PlaylistItem? playlistItem = playlistItemsListResponse.Items[i];
-                    videoIds.Add(playlistItem.Snippet.ResourceId.VideoId);
-                    if (playlistItem.Snippet.Thumbnails.Standard != null)
-                    {
-                        thumbnails.Add(playlistItem.Snippet.Thumbnails.Standard.Url);
-                    }
-                    else
-                    {
-                        thumbnails.Add("");
-                    }
-                    musicTitle.Add(playlistItem.Snippet.Title);
-                }
-                nextPageToken = playlistItemsListResponse.NextPageToken;
+                    var playlistid = playlistLink.Substring(playlistLink.IndexOf('=') + 1, playlistLink.Length - playlistLink.IndexOf('=') - 1);
+                    var playlistItemsListRequest = youtubeService.PlaylistItems.List("snippet");
+                    playlistItemsListRequest.MaxResults = 50;
+                    playlistItemsListRequest.PlaylistId = playlistid;
+                    playlistItemsListRequest.PageToken = nextPageToken;
+                    var playlistItemsListResponse = playlistItemsListRequest.Execute();
 
+                    for (int i = 0; i < playlistItemsListResponse.Items.Count; i++)
+                    {
+                        PlaylistItem? playlistItem = playlistItemsListResponse.Items[i];
+                        videoIds.Add(playlistItem.Snippet.ResourceId.VideoId);
+                        if (playlistItem.Snippet.Thumbnails.Standard != null)
+                        {
+                            thumbnails.Add(playlistItem.Snippet.Thumbnails.Standard.Url);
+                        }
+                        else
+                        {
+                            thumbnails.Add("");
+                        }
+                        musicTitle.Add(playlistItem.Snippet.Title);
+                    }
+                    nextPageToken = playlistItemsListResponse.NextPageToken;
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("awaaahh ");
+                }
             }
             else
             {
-                var playlistid = playlistLink;
-                var playlistItemsListRequest = youtubeService.PlaylistItems.List("snippet");
-                playlistItemsListRequest.MaxResults = 50;
-                playlistItemsListRequest.PlaylistId = playlistid;
-                var playlistItemsListResponse = playlistItemsListRequest.Execute();
-                playlistItemsListRequest.PageToken = nextPageToken;
-                for (int i = 0; i < playlistItemsListResponse.Items.Count; i++)
+                try
                 {
-                    PlaylistItem? playlistItem = playlistItemsListResponse.Items[i];
-                    videoIds.Add(playlistItem.Snippet.ResourceId.VideoId);
-                    if (playlistItem.Snippet.Thumbnails.Standard != null)
+                    var playlistid = playlistLink;
+                    var playlistItemsListRequest = youtubeService.PlaylistItems.List("snippet");
+                    playlistItemsListRequest.MaxResults = 50;
+                    playlistItemsListRequest.PlaylistId = playlistid;
+                    var playlistItemsListResponse = playlistItemsListRequest.Execute();
+                    playlistItemsListRequest.PageToken = nextPageToken;
+                    for (int i = 0; i < playlistItemsListResponse.Items.Count; i++)
                     {
-                        thumbnails.Add(playlistItem.Snippet.Thumbnails.Standard.Url);
+                        PlaylistItem? playlistItem = playlistItemsListResponse.Items[i];
+                        videoIds.Add(playlistItem.Snippet.ResourceId.VideoId);
+                        if (playlistItem.Snippet.Thumbnails.Standard != null)
+                        {
+                            thumbnails.Add(playlistItem.Snippet.Thumbnails.Standard.Url);
+                        }
+                        else
+                        {
+                            thumbnails.Add("");
+                        }
+                        musicTitle.Add(playlistItem.Snippet.Title);
                     }
-                    else
-                    {
-                        thumbnails.Add("");
-                    }
-                    musicTitle.Add(playlistItem.Snippet.Title);
+                    nextPageToken = playlistItemsListResponse.NextPageToken;
                 }
-                nextPageToken = playlistItemsListResponse.NextPageToken;
+                catch (Exception ex)
+                {
+                    MessageBox.Show("awaaaah v2");
+                }
             }
+                
             return videoIds;
 
         }

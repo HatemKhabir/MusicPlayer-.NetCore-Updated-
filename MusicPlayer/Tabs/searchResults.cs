@@ -15,23 +15,17 @@ namespace MusicPlayer.Tabs
         public string thumbnailURL { get; set; }
         private MusicList ml;
         private YoutubeAPI ytb = new YoutubeAPI();
-        private YoutubeSearch search;
+        private Mainpage mainpage;
        
 
-        public searchResults(MusicList ml, YoutubeSearch sch)
+        public searchResults(MusicList ml,Mainpage mp)
         {
             InitializeComponent();
             this.ml = ml;
-            this.search = sch;
+            this.mainpage = mp;
            
         }
-        public searchResults(MusicList ml)
-        {
-            InitializeComponent();
-            this.ml = ml;
-
-        }
-
+    
         public void changeImage(String musicname)
         {if (thumbnailURL!="")
             this.videoThumbnail.Load(thumbnailURL);
@@ -43,30 +37,53 @@ namespace MusicPlayer.Tabs
         //Download Button Action
         private async void DownloadMP3(object sender, EventArgs e)
         {
-            var youtube = new YoutubeClient();
-            var streamManifest = await youtube.Videos.Streams.GetManifestAsync("https://youtube.com/watch?v=" + musicid);
-            var streamInfo = streamManifest.GetAudioOnlyStreams().GetWithHighestBitrate();
-
-            // Create an SaveFileDialog to select the download location
-            using (var SaveFileDialog = new SaveFileDialog())
+            int attempts = 0;
+            while (attempts < 3)
             {
-                SaveFileDialog.Filter = "Music Files|*.mp3";
-                if (SaveFileDialog.ShowDialog() == DialogResult.OK)
+                try
                 {
-                    var filepath = SaveFileDialog.FileName;
+                    var youtube = new YoutubeClient();
+                    var streamManifest = await youtube.Videos.Streams.GetManifestAsync("https://youtube.com/watch?v=" + musicid);
+                    var streamInfo = streamManifest.GetAudioOnlyStreams().GetWithHighestBitrate();
 
-                    // Download the stream to the selected file
-                    var progress = new Progress<double>(p => search.ProgressBar1.Value = (int)(p * 100));
-                    try
+                    // Create an SaveFileDialog to select the download location
+                    using (var SaveFileDialog = new SaveFileDialog())
                     {
-                        await youtube.Videos.Streams.DownloadAsync(streamInfo, filepath, progress);
+                        SaveFileDialog.Filter = "Music Files|*.mp3";
+                        if (SaveFileDialog.ShowDialog() == DialogResult.OK)
+                        {
+                            var filepath = SaveFileDialog.FileName;
 
-                    }catch(Exception ex)
-                    {
-                        MessageBox.Show("wallah manaaref aleh , base lvideo is not found donc it's OUT OF MY HAND . ");
+                            // Download the stream to the selected file
+                            var progress = new Progress<double>(p =>
+                            {
+                                mainpage.ProgressBar1.Value = (int)(p * 100);
+                                mainpage.ProgressBar1.Update();
+                            });
+                            try
+                            {
+                                await youtube.Videos.Streams.DownloadAsync(streamInfo, filepath, progress);
+
+                            }
+                            catch (Exception ex)
+                            {
+                                MessageBox.Show("wallah manaaref aleh , base lvideo is not found donc it's OUT OF MY HAND . ");
+                            }
+                            MessageBox.Show("Download Finished , check : " + filepath);
+                            break;
+                        }
                     }
-                    MessageBox.Show("Download Finished , check : " + filepath);
+                    break;
                 }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("retrying again , press ok . ");
+                    attempts++;
+                }
+            }
+            if (attempts == 3)
+            {
+                MessageBox.Show("All attempts failed");
             }
 
         }
@@ -74,14 +91,31 @@ namespace MusicPlayer.Tabs
         //Play as mp3 button
         private async void PlayMp3(object sender, EventArgs e)
         {
-            var youtube = new YoutubeClient();
-            var streamManifest = await youtube.Videos.Streams.GetManifestAsync("https://youtube.com/watch?v=" + musicid);
-            var streamInfo = streamManifest.GetAudioOnlyStreams().GetWithHighestBitrate();
-            var stream = await youtube.Videos.Streams.GetAsync(streamInfo);
-            ml.player.URL = streamInfo.Url;
-            ml.changeLabelsText(thumbnailURL, ytb.VideoName(musicid));
-            ml.playingSong = videoNumber;
-            ml.changeHomeForm();
+            int attempts = 0;
+            while (attempts < 3)
+            {
+                try
+                {
+                    var youtube = new YoutubeClient();
+                    var streamManifest = await youtube.Videos.Streams.GetManifestAsync("https://youtube.com/watch?v=" + musicid);
+                    var streamInfo = streamManifest.GetAudioOnlyStreams().GetWithHighestBitrate();
+                    var stream = await youtube.Videos.Streams.GetAsync(streamInfo);
+                    ml.player.URL = streamInfo.Url;
+                }catch(Exception ex)
+                {
+                    MessageBox.Show("retrying...");
+                    attempts++;
+
+                }
+            }
+            if (attempts < 3)
+            {
+                ml.changeLabelsText(thumbnailURL, ytb.VideoName(musicid));
+                ml.playingSong = videoNumber;
+                ml.changeHomeForm();
+            }
+            else MessageBox.Show("something wrong happened");
+            
 
         }
 

@@ -34,13 +34,10 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             this.siticoneButton1 = new Guna.UI2.WinForms.Guna2Button();
             this.musicSearch = new Guna.UI2.WinForms.Guna2TextBox();
             this.siticonePictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.SearchResults = new System.Windows.Forms.FlowLayoutPanel();
-            this.ProgressBar1 = new Guna.UI2.WinForms.Guna2ProgressBar();
             ((System.ComponentModel.ISupportInitialize)(this.siticonePictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -108,27 +105,14 @@
             this.SearchResults.Location = new System.Drawing.Point(-1, 50);
             this.SearchResults.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.SearchResults.Name = "SearchResults";
-            this.SearchResults.Size = new System.Drawing.Size(729, 392);
+            this.SearchResults.Size = new System.Drawing.Size(729, 419);
             this.SearchResults.TabIndex = 3;
-            // 
-            // ProgressBar1
-            // 
-            this.ProgressBar1.CustomizableEdges = customizableEdges7;
-            this.ProgressBar1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.ProgressBar1.Location = new System.Drawing.Point(0, 442);
-            this.ProgressBar1.Name = "ProgressBar1";
-            this.ProgressBar1.ShadowDecoration.CustomizableEdges = customizableEdges8;
-            this.ProgressBar1.Size = new System.Drawing.Size(728, 26);
-            this.ProgressBar1.TabIndex = 0;
-            this.ProgressBar1.Text = "guna2ProgressBar1";
-            this.ProgressBar1.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
             // 
             // YoutubeSearch
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(728, 468);
-            this.Controls.Add(this.ProgressBar1);
             this.Controls.Add(this.SearchResults);
             this.Controls.Add(this.siticonePictureBox1);
             this.Controls.Add(this.musicSearch);
@@ -148,6 +132,5 @@
         private Guna.UI2.WinForms.Guna2TextBox musicSearch;
         private Guna.UI2.WinForms.Guna2PictureBox siticonePictureBox1;
         private System.Windows.Forms.FlowLayoutPanel SearchResults;
-        public Guna.UI2.WinForms.Guna2ProgressBar ProgressBar1;
     }
 }

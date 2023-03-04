@@ -54,7 +54,7 @@ namespace MusicPlayer.Tabs
             LinkedList<string> streamInfosList = new LinkedList<string>();
             for (int i = 0; i < musiclist.Count - 1; i++)
             {
-                searchResults results = new searchResults(ml,this)
+                searchResults results = new searchResults(ml,mp)
                 {
                     musicid = musiclist.ElementAt(i),
                     title = musicTitle.ElementAt(i),

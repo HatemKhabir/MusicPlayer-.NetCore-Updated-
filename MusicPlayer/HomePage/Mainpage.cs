@@ -20,7 +20,7 @@ namespace MusicPlayer.HomePage
         private bool collapsedDownload = false;
         private FirstPage firstpage;
         private Home homepage;
-        private Form activeform = null;
+        private Form? activeform = null;
         private YoutubePlaylist ytbPlaylist;
         public MusicList musiclist { get; }
         private YoutubeSearch ytbsearch;
@@ -31,8 +31,8 @@ namespace MusicPlayer.HomePage
             this.firstpage = firstpage;
             homepage = new Home();
             musiclist = new MusicList(this, homepage);
-            ytbPlaylist = new YoutubePlaylist(musiclist,this);
             ytbsearch = new YoutubeSearch(this,musiclist);
+            ytbPlaylist = new YoutubePlaylist(musiclist, this);
             showForm(homepage);
 
         }
@@ -178,9 +178,9 @@ namespace MusicPlayer.HomePage
             musiclist.musicstop();
         }
 
-        private void PlayButtonClick(object sender, EventArgs e)
+        private async void PlayButtonClick(object sender, EventArgs e)
         {
-            musiclist.musicplay();
+            await musiclist.musicplay();
 
         }
         private void timer1_Tick(object sender, EventArgs e)
@@ -218,7 +218,7 @@ namespace MusicPlayer.HomePage
 
         private void youtubeToMp3_Click(object sender, EventArgs e)
         {
-            YoutubeToMP3 ytbToMp3 = new YoutubeToMP3();
+            YoutubeToMP3 ytbToMp3 = new YoutubeToMP3(this);
             showForm(ytbToMp3);
         }
 

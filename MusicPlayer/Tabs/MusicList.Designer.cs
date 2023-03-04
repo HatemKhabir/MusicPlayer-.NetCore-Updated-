@@ -34,13 +34,12 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             this.musicListTable = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.guna2GradientButton1 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.Play = new System.Windows.Forms.DataGridViewButtonColumn();
             this.No = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Title = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Duration = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Location = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.guna2GradientButton1 = new Guna.UI2.WinForms.Guna2GradientButton();
             ((System.ComponentModel.ISupportInitialize)(this.musicListTable)).BeginInit();
             this.SuspendLayout();
             // 
@@ -62,7 +61,6 @@
             this.Play,
             this.No,
             this.Title,
-            this.Duration,
             this.Location});
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
@@ -74,13 +72,13 @@
             this.musicListTable.DefaultCellStyle = dataGridViewCellStyle3;
             this.musicListTable.Enabled = false;
             this.musicListTable.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.musicListTable.Location = new System.Drawing.Point(0, 49);
-            this.musicListTable.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.musicListTable.Location = new System.Drawing.Point(0, 37);
+            this.musicListTable.Margin = new System.Windows.Forms.Padding(4);
             this.musicListTable.Name = "musicListTable";
             this.musicListTable.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken;
             this.musicListTable.RowHeadersVisible = false;
             this.musicListTable.RowHeadersWidth = 51;
-            this.musicListTable.Size = new System.Drawing.Size(1069, 645);
+            this.musicListTable.Size = new System.Drawing.Size(729, 392);
             this.musicListTable.TabIndex = 5;
             this.musicListTable.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.musicListTable.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -106,6 +104,39 @@
             this.musicListTable.Visible = false;
             this.musicListTable.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.PlayFromImportedMusic);
             this.musicListTable.CellPainting += new System.Windows.Forms.DataGridViewCellPaintingEventHandler(this.AddingPlayImageInTable);
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            this.openFileDialog1.Filter = "\"MP3 files(*.mp3)|*.mp3";
+            this.openFileDialog1.Multiselect = true;
+            this.openFileDialog1.FileOk += new System.ComponentModel.CancelEventHandler(this.openFileDialog1_FileOk_1);
+            // 
+            // guna2GradientButton1
+            // 
+            this.guna2GradientButton1.Animated = true;
+            this.guna2GradientButton1.AutoRoundedCorners = true;
+            this.guna2GradientButton1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2GradientButton1.BorderRadius = 21;
+            this.guna2GradientButton1.CustomizableEdges = customizableEdges1;
+            this.guna2GradientButton1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2GradientButton1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2GradientButton1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2GradientButton1.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2GradientButton1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2GradientButton1.FillColor = System.Drawing.Color.Snow;
+            this.guna2GradientButton1.FillColor2 = System.Drawing.Color.Gray;
+            this.guna2GradientButton1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.guna2GradientButton1.ForeColor = System.Drawing.Color.White;
+            this.guna2GradientButton1.Location = new System.Drawing.Point(-18, -4);
+            this.guna2GradientButton1.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2GradientButton1.Name = "guna2GradientButton1";
+            this.guna2GradientButton1.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            this.guna2GradientButton1.Size = new System.Drawing.Size(228, 44);
+            this.guna2GradientButton1.TabIndex = 6;
+            this.guna2GradientButton1.Text = "Import Music";
+            this.guna2GradientButton1.UseTransparentBackground = true;
+            this.guna2GradientButton1.Click += new System.EventHandler(this.ImportMusicButton);
             // 
             // Play
             // 
@@ -133,15 +164,6 @@
             this.Title.Name = "Title";
             this.Title.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             // 
-            // Duration
-            // 
-            this.Duration.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Duration.FillWeight = 50F;
-            this.Duration.HeaderText = "Duration";
-            this.Duration.MinimumWidth = 6;
-            this.Duration.Name = "Duration";
-            this.Duration.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            // 
             // Location
             // 
             this.Location.HeaderText = "Location";
@@ -149,48 +171,15 @@
             this.Location.Name = "Location";
             this.Location.Visible = false;
             // 
-            // openFileDialog1
-            // 
-            this.openFileDialog1.FileName = "openFileDialog1";
-            this.openFileDialog1.Filter = "\"MP3 files(*.mp3)|*.mp3";
-            this.openFileDialog1.Multiselect = true;
-            this.openFileDialog1.FileOk += new System.ComponentModel.CancelEventHandler(this.openFileDialog1_FileOk_1);
-            // 
-            // guna2GradientButton1
-            // 
-            this.guna2GradientButton1.Animated = true;
-            this.guna2GradientButton1.AutoRoundedCorners = true;
-            this.guna2GradientButton1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2GradientButton1.BorderRadius = 28;
-            this.guna2GradientButton1.CustomizableEdges = customizableEdges1;
-            this.guna2GradientButton1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2GradientButton1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2GradientButton1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2GradientButton1.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2GradientButton1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2GradientButton1.FillColor = System.Drawing.Color.Snow;
-            this.guna2GradientButton1.FillColor2 = System.Drawing.Color.Gray;
-            this.guna2GradientButton1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.guna2GradientButton1.ForeColor = System.Drawing.Color.White;
-            this.guna2GradientButton1.Location = new System.Drawing.Point(-20, -6);
-            this.guna2GradientButton1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.guna2GradientButton1.Name = "guna2GradientButton1";
-            this.guna2GradientButton1.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            this.guna2GradientButton1.Size = new System.Drawing.Size(260, 58);
-            this.guna2GradientButton1.TabIndex = 6;
-            this.guna2GradientButton1.Text = "Import Music";
-            this.guna2GradientButton1.UseTransparentBackground = true;
-            this.guna2GradientButton1.Click += new System.EventHandler(this.ImportMusicButton);
-            // 
             // MusicList
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1067, 692);
+            this.ClientSize = new System.Drawing.Size(728, 428);
             this.Controls.Add(this.guna2GradientButton1);
             this.Controls.Add(this.musicListTable);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "MusicList";
             this.Text = "MusicList";
             ((System.ComponentModel.ISupportInitialize)(this.musicListTable)).EndInit();
@@ -201,11 +190,10 @@
         #endregion
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton1;
-        private System.Windows.Forms.DataGridViewButtonColumn Play;
-        private System.Windows.Forms.DataGridViewTextBoxColumn No;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Title;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Duration;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Location;
         public Guna.UI2.WinForms.Guna2DataGridView musicListTable;
+        private DataGridViewButtonColumn Play;
+        private DataGridViewTextBoxColumn No;
+        private DataGridViewTextBoxColumn Title;
+        private DataGridViewTextBoxColumn Location;
     }
 }

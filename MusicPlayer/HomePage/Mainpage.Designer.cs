@@ -47,17 +47,19 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges15 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges28 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges29 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges26 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges27 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges21 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges22 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges23 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges24 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges25 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges26 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges27 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges28 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges29 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges30 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges31 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges19 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges20 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges21 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges22 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             this.siticoneGradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.guna2GradientButton11 = new Guna.UI2.WinForms.Guna2GradientButton();
@@ -88,6 +90,7 @@
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(this.components);
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.ProgressBar1 = new Guna.UI2.WinForms.Guna2ProgressBar();
             this.siticoneGradientPanel1.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -109,7 +112,7 @@
             this.siticoneGradientPanel1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.siticoneGradientPanel1.Name = "siticoneGradientPanel1";
             this.siticoneGradientPanel1.ShadowDecoration.CustomizableEdges = customizableEdges18;
-            this.siticoneGradientPanel1.Size = new System.Drawing.Size(205, 448);
+            this.siticoneGradientPanel1.Size = new System.Drawing.Size(205, 431);
             this.siticoneGradientPanel1.TabIndex = 0;
             // 
             // panel4
@@ -364,7 +367,7 @@
             this.formPanel.Location = new System.Drawing.Point(204, 14);
             this.formPanel.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.formPanel.Name = "formPanel";
-            this.formPanel.Size = new System.Drawing.Size(728, 448);
+            this.formPanel.Size = new System.Drawing.Size(728, 428);
             this.formPanel.TabIndex = 0;
             // 
             // guna2GradientPanel1
@@ -380,15 +383,14 @@
             this.guna2GradientPanel1.Controls.Add(this.guna2ImageButton3);
             this.guna2GradientPanel1.Controls.Add(this.guna2ImageButton2);
             this.guna2GradientPanel1.Controls.Add(this.guna2ImageButton1);
-            this.guna2GradientPanel1.CustomizableEdges = customizableEdges28;
-            this.guna2GradientPanel1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.guna2GradientPanel1.CustomizableEdges = customizableEdges26;
             this.guna2GradientPanel1.FillColor = System.Drawing.Color.PowderBlue;
             this.guna2GradientPanel1.FillColor2 = System.Drawing.SystemColors.ButtonHighlight;
-            this.guna2GradientPanel1.Location = new System.Drawing.Point(0, 461);
+            this.guna2GradientPanel1.Location = new System.Drawing.Point(0, 443);
             this.guna2GradientPanel1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.guna2GradientPanel1.Name = "guna2GradientPanel1";
-            this.guna2GradientPanel1.ShadowDecoration.CustomizableEdges = customizableEdges29;
-            this.guna2GradientPanel1.Size = new System.Drawing.Size(933, 58);
+            this.guna2GradientPanel1.ShadowDecoration.CustomizableEdges = customizableEdges27;
+            this.guna2GradientPanel1.Size = new System.Drawing.Size(933, 64);
             this.guna2GradientPanel1.TabIndex = 1;
             // 
             // timeLabel
@@ -416,10 +418,10 @@
             // playingSongLabel
             // 
             this.playingSongLabel.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.playingSongLabel.Location = new System.Drawing.Point(73, 10);
+            this.playingSongLabel.Location = new System.Drawing.Point(75, 10);
             this.playingSongLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.playingSongLabel.Name = "playingSongLabel";
-            this.playingSongLabel.Size = new System.Drawing.Size(137, 42);
+            this.playingSongLabel.Size = new System.Drawing.Size(137, 35);
             this.playingSongLabel.TabIndex = 6;
             this.playingSongLabel.Text = ": Song Name";
             this.playingSongLabel.Visible = false;
@@ -450,7 +452,7 @@
             this.guna2ImageButton5.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.guna2ImageButton5.Name = "guna2ImageButton5";
             this.guna2ImageButton5.PressedState.ImageSize = new System.Drawing.Size(25, 25);
-            this.guna2ImageButton5.ShadowDecoration.CustomizableEdges = customizableEdges23;
+            this.guna2ImageButton5.ShadowDecoration.CustomizableEdges = customizableEdges21;
             this.guna2ImageButton5.Size = new System.Drawing.Size(34, 35);
             this.guna2ImageButton5.TabIndex = 5;
             this.guna2ImageButton5.Click += new System.EventHandler(this.VolumeButtonClick);
@@ -458,7 +460,7 @@
             // slider
             // 
             this.slider.BackColor = System.Drawing.Color.Transparent;
-            this.slider.Location = new System.Drawing.Point(376, 10);
+            this.slider.Location = new System.Drawing.Point(375, 9);
             this.slider.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.slider.Name = "slider";
             this.slider.Size = new System.Drawing.Size(379, 36);
@@ -480,7 +482,7 @@
             this.guna2ImageButton4.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.guna2ImageButton4.Name = "guna2ImageButton4";
             this.guna2ImageButton4.PressedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.guna2ImageButton4.ShadowDecoration.CustomizableEdges = customizableEdges24;
+            this.guna2ImageButton4.ShadowDecoration.CustomizableEdges = customizableEdges22;
             this.guna2ImageButton4.Size = new System.Drawing.Size(44, 36);
             this.guna2ImageButton4.TabIndex = 3;
             this.guna2ImageButton4.Click += new System.EventHandler(this.PlayButtonClick);
@@ -498,7 +500,7 @@
             this.guna2ImageButton3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.guna2ImageButton3.Name = "guna2ImageButton3";
             this.guna2ImageButton3.PressedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.guna2ImageButton3.ShadowDecoration.CustomizableEdges = customizableEdges25;
+            this.guna2ImageButton3.ShadowDecoration.CustomizableEdges = customizableEdges23;
             this.guna2ImageButton3.Size = new System.Drawing.Size(44, 36);
             this.guna2ImageButton3.TabIndex = 2;
             this.guna2ImageButton3.Click += new System.EventHandler(this.PauseButtonClick);
@@ -517,7 +519,7 @@
             this.guna2ImageButton2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.guna2ImageButton2.Name = "guna2ImageButton2";
             this.guna2ImageButton2.PressedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.guna2ImageButton2.ShadowDecoration.CustomizableEdges = customizableEdges26;
+            this.guna2ImageButton2.ShadowDecoration.CustomizableEdges = customizableEdges24;
             this.guna2ImageButton2.Size = new System.Drawing.Size(44, 36);
             this.guna2ImageButton2.TabIndex = 1;
             this.guna2ImageButton2.Click += new System.EventHandler(this.PreviousButtonClick);
@@ -536,7 +538,7 @@
             this.guna2ImageButton1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.guna2ImageButton1.Name = "guna2ImageButton1";
             this.guna2ImageButton1.PressedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.guna2ImageButton1.ShadowDecoration.CustomizableEdges = customizableEdges27;
+            this.guna2ImageButton1.ShadowDecoration.CustomizableEdges = customizableEdges25;
             this.guna2ImageButton1.Size = new System.Drawing.Size(44, 33);
             this.guna2ImageButton1.TabIndex = 0;
             this.guna2ImageButton1.Click += new System.EventHandler(this.NextButtonClick);
@@ -545,26 +547,26 @@
             // 
             this.guna2ControlBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2ControlBox2.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MinimizeBox;
-            this.guna2ControlBox2.CustomizableEdges = customizableEdges19;
+            this.guna2ControlBox2.CustomizableEdges = customizableEdges28;
             this.guna2ControlBox2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(152)))), ((int)(((byte)(166)))));
             this.guna2ControlBox2.IconColor = System.Drawing.Color.White;
             this.guna2ControlBox2.Location = new System.Drawing.Point(849, -3);
             this.guna2ControlBox2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.guna2ControlBox2.Name = "guna2ControlBox2";
-            this.guna2ControlBox2.ShadowDecoration.CustomizableEdges = customizableEdges20;
+            this.guna2ControlBox2.ShadowDecoration.CustomizableEdges = customizableEdges29;
             this.guna2ControlBox2.Size = new System.Drawing.Size(44, 21);
             this.guna2ControlBox2.TabIndex = 4;
             // 
             // guna2ControlBox1
             // 
             this.guna2ControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2ControlBox1.CustomizableEdges = customizableEdges21;
+            this.guna2ControlBox1.CustomizableEdges = customizableEdges30;
             this.guna2ControlBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(152)))), ((int)(((byte)(166)))));
             this.guna2ControlBox1.IconColor = System.Drawing.Color.White;
             this.guna2ControlBox1.Location = new System.Drawing.Point(889, -3);
             this.guna2ControlBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.guna2ControlBox1.Name = "guna2ControlBox1";
-            this.guna2ControlBox1.ShadowDecoration.CustomizableEdges = customizableEdges22;
+            this.guna2ControlBox1.ShadowDecoration.CustomizableEdges = customizableEdges31;
             this.guna2ControlBox1.Size = new System.Drawing.Size(44, 21);
             this.guna2ControlBox1.TabIndex = 3;
             this.guna2ControlBox1.Click += new System.EventHandler(this.guna2ControlBox1_Click);
@@ -580,16 +582,35 @@
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // ProgressBar1
+            // 
+            this.ProgressBar1.BackColor = System.Drawing.Color.Transparent;
+            this.ProgressBar1.BorderColor = System.Drawing.Color.Transparent;
+            this.ProgressBar1.BorderRadius = 10;
+            this.ProgressBar1.CustomizableEdges = customizableEdges19;
+            this.ProgressBar1.FillColor = System.Drawing.Color.PaleTurquoise;
+            this.ProgressBar1.Location = new System.Drawing.Point(-4, 499);
+            this.ProgressBar1.Name = "ProgressBar1";
+            this.ProgressBar1.ProgressBrushMode = Guna.UI2.WinForms.Enums.BrushMode.SolidTransition;
+            this.ProgressBar1.ProgressColor = System.Drawing.Color.LawnGreen;
+            this.ProgressBar1.ShadowDecoration.CustomizableEdges = customizableEdges20;
+            this.ProgressBar1.ShowText = true;
+            this.ProgressBar1.Size = new System.Drawing.Size(934, 20);
+            this.ProgressBar1.TabIndex = 5;
+            this.ProgressBar1.Text = "guna2ProgressBar1";
+            this.ProgressBar1.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            // 
             // Mainpage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSlateGray;
             this.ClientSize = new System.Drawing.Size(933, 519);
+            this.Controls.Add(this.ProgressBar1);
+            this.Controls.Add(this.guna2GradientPanel1);
             this.Controls.Add(this.formPanel);
             this.Controls.Add(this.guna2ControlBox2);
             this.Controls.Add(this.guna2ControlBox1);
-            this.Controls.Add(this.guna2GradientPanel1);
             this.Controls.Add(this.siticoneGradientPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -637,5 +658,6 @@
         public Guna.UI2.WinForms.Guna2TrackBar slider;
         public Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton2;
         public Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton1;
+        public Guna.UI2.WinForms.Guna2ProgressBar ProgressBar1;
     }
 }

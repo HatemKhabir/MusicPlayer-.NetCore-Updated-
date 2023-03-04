@@ -177,7 +177,7 @@ namespace MusicPlayer.Tabs
 
                 FileInfo f1 = new FileInfo(item);
                 musicListTable.Rows.Add(new object[]
-                {"P",++i,f1.Name,"00:00:00",f1.FullName});
+                {"P",++i,f1.Name,f1.FullName});
 
                 if (songs == null)
                     songs.AddFirst(f1.FullName);
