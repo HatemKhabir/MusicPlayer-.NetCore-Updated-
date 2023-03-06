@@ -101,11 +101,12 @@ namespace MusicPlayer.Tabs
                     var streamInfo = streamManifest.GetAudioOnlyStreams().GetWithHighestBitrate();
                     var stream = await youtube.Videos.Streams.GetAsync(streamInfo);
                     ml.player.URL = streamInfo.Url;
-                }catch(Exception ex)
+                    break;
+                }
+                catch (Exception ex)
                 {
                     MessageBox.Show("retrying...");
                     attempts++;
-
                 }
             }
             if (attempts < 3)

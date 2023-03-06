@@ -148,7 +148,7 @@ namespace MusicPlayer
         {
             try
             {
-                return "https://img.youtube.com/vi/" + musicID + "/maxresdefault.jpg";
+                return "https://img.youtube.com/vi/" + musicID + "/hqdefault.jpg";
             }catch(Exception e)
             {
                 MessageBox.Show("Errorr ! aleh ? mandroch . ");

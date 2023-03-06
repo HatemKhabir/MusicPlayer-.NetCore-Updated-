@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel;
+using AngleSharp.Html;
 using MusicPlayer.HomePage;
 using WMPLib;
 
@@ -36,7 +37,7 @@ namespace MusicPlayer.Tabs
                 e.RowIndex >= 0)
             {
 
-                player.URL = musicListTable.Rows[e.RowIndex].Cells[4].Value.ToString();
+                player.URL = musicListTable.Rows[e.RowIndex].Cells[3].Value.ToString();
                 home.nowPlayingLabel.Visible = true;
                 home.playingSongLabel.Visible = true;
                 mainpage.nowPlayingLabel.Visible = true;
@@ -57,14 +58,24 @@ namespace MusicPlayer.Tabs
         }
         public async void changeimgVisual(String musicname)
         {
-            try
+            int attempts = 0;
+            while (attempts < 3)
             {
-                home.imgVisualiza.Load(ytb.thumbnail(ytb.singlemusicID(musicname)));
-            }catch(Exception e)
-            {
-                MessageBox.Show(e.Message);
-                await musicplay();
+                try
+                {
+                    home.imgVisualiza.Load(ytb.thumbnail(ytb.singlemusicID(musicname)));
+                    break;
+                }
+                catch (Exception e)
+                {
+                    attempts++;
+                }
             }
+            if (attempts== 3)
+            {
+                MessageBox.Show("no thumbnail found . youtube faults not mine .  ");
+            }
+            await musicplay();
         }
         public void musicstop()
         {
@@ -167,6 +178,7 @@ namespace MusicPlayer.Tabs
 
         private void openFileDialog1_FileOk_1(object sender, CancelEventArgs e)
         {
+            musicListTable.Enabled = true;
             songs = new LinkedList<string>();
             playingSong = 0;
             musicListTable.Visible = true;

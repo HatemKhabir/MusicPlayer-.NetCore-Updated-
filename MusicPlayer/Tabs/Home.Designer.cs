@@ -43,7 +43,7 @@
             this.nowPlayingLabel.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.nowPlayingLabel.Font = new System.Drawing.Font("Courier New", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.nowPlayingLabel.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.nowPlayingLabel.Location = new System.Drawing.Point(164, 385);
+            this.nowPlayingLabel.Location = new System.Drawing.Point(164, 377);
             this.nowPlayingLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.nowPlayingLabel.Name = "nowPlayingLabel";
             this.nowPlayingLabel.Size = new System.Drawing.Size(125, 17);
@@ -53,18 +53,16 @@
             // 
             // playingSongLabel
             // 
-            this.playingSongLabel.AutoEllipsis = true;
-            this.playingSongLabel.AutoSize = true;
             this.playingSongLabel.BackColor = System.Drawing.Color.Transparent;
             this.playingSongLabel.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.playingSongLabel.Font = new System.Drawing.Font("Courier New", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.playingSongLabel.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.playingSongLabel.Location = new System.Drawing.Point(281, 385);
+            this.playingSongLabel.Location = new System.Drawing.Point(281, 377);
             this.playingSongLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.playingSongLabel.Name = "playingSongLabel";
-            this.playingSongLabel.Size = new System.Drawing.Size(125, 17);
+            this.playingSongLabel.Size = new System.Drawing.Size(230, 42);
             this.playingSongLabel.TabIndex = 8;
-            this.playingSongLabel.Text = "-   Song Name";
+            this.playingSongLabel.Text = "   Song Name";
             this.playingSongLabel.Visible = false;
             // 
             // imgVisualiza
