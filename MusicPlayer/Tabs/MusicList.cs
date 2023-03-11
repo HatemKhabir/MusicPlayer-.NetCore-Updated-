@@ -26,8 +26,6 @@ namespace MusicPlayer.Tabs
             this.mainpage = mp;
             this.home = home;
         }
-        private Image img = Image.FromFile(@"C:\Users\Hatem\Downloads\play.jpg");
-
 
         private void PlayFromImportedMusic(object sender, DataGridViewCellEventArgs e)
         {
@@ -182,8 +180,6 @@ namespace MusicPlayer.Tabs
             songs = new LinkedList<string>();
             playingSong = 0;
             musicListTable.Visible = true;
-            //string icon = @"c:\users\hatem\downloads\play.jpg";
-            //image img = image.fromfile(icon);
             foreach (var item in openFileDialog1.FileNames)
             {
 
