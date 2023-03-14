@@ -19,8 +19,8 @@ namespace MusicPlayer.Tabs
         private YoutubeAPI ytb = new YoutubeAPI();
         private MusicList ml;
         private Mainpage mp;
-        
-        public YoutubeSearch(Mainpage mainpage,MusicList mp)
+
+        public YoutubeSearch(Mainpage mainpage, MusicList mp)
         {
             InitializeComponent();
             this.ml = mp;
@@ -38,7 +38,6 @@ namespace MusicPlayer.Tabs
                 return streamInfo.Url;
             } catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
                 return "";
              }
             return null;

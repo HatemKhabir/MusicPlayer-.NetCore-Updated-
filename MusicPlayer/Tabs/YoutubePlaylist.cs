@@ -94,7 +94,6 @@ namespace MusicPlayer.Tabs
                 }
             else
                 guna2Button1.Enabled = false;
-            MessageBox.Show("this is aftermore : " + musiclist.Count);
 
         }
 
@@ -105,20 +104,24 @@ namespace MusicPlayer.Tabs
             "don't load all playlist and then press download ," +
             " that ain't working unlucko , "+
             "too much work to make it work "+
-            " , thank you ! ");      
+            " , thank you ! ");
+            int attempts = 0;
             // Create an SaveFileDialog to select the download location
             using (var SaveFileDialog = new SaveFileDialog())
             {
                 SaveFileDialog.Filter = "Music Files|*.mp3";
-                SaveFileDialog.FileName = musicTitle.ElementAt(0);
+                SaveFileDialog.FileName = musicTitle.ElementAt(0)+".mp3";
+                
                 if (SaveFileDialog.ShowDialog() == DialogResult.OK)
                 {
                     var directory = Path.GetDirectoryName(SaveFileDialog.FileName);
+                    
                     for (int i = 0; i < musiclist.Count; i++)
                     {
                         var youtube = new YoutubeClient();
                         var musicId = musiclist[i];
-
+                        attempts = 0;
+                        while (attempts<3)
                         try
                         {
                             var streamManifest = await youtube.Videos.Streams.GetManifestAsync("https://youtube.com/watch?v=" + musicId);
@@ -131,20 +134,19 @@ namespace MusicPlayer.Tabs
                             {
                                 mainpage.ProgressBar1.Value = (int)(p * 100);
                                 mainpage.ProgressBar1.Update();
-                            });
+                            });                         
                             try
                             {
                                 await youtube.Videos.Streams.DownloadAsync(streamInfo, filePath, progressHandler);
-                            }
+                                    break;
+                                }
                             catch (Exception exp)
                             {
-                                MessageBox.Show("wallah manaaref aleh , samahni ");
                             }
                         }catch(Exception ex)
                         {
-                            MessageBox.Show("wallah manaaref aleh , base lvideo is not found donc it's OUT OF MY HAND . ");
                         }
-
+                        attempts++;
                     }
 
                         MessageBox.Show("Download Finished ! شكرا على حسن المتباعة و الإنتباه و إلى اللقاء ! ");

@@ -49,6 +49,7 @@ namespace MusicPlayer.Tabs
                     // Create an SaveFileDialog to select the download location
                     using (var SaveFileDialog = new SaveFileDialog())
                     {
+                        SaveFileDialog.FileName = title+".mp3";
                         SaveFileDialog.Filter = "Music Files|*.mp3";
                         if (SaveFileDialog.ShowDialog() == DialogResult.OK)
                         {
@@ -66,9 +67,7 @@ namespace MusicPlayer.Tabs
 
                             }
                             catch (Exception ex)
-                            {
-                                MessageBox.Show("wallah manaaref aleh , base lvideo is not found donc it's OUT OF MY HAND . ");
-                            }
+                            {}
                             MessageBox.Show("Download Finished , check : " + filepath);
                             break;
                         }
