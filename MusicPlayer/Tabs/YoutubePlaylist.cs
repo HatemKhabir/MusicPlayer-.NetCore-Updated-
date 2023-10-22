@@ -16,7 +16,7 @@ namespace MusicPlayer.Tabs
 {
     public partial class YoutubePlaylist : Form
     {
-        private YoutubeAPI ytb = new YoutubeAPI();
+        private YoutubeAPI ytb;
         public string nextPageToken = "";
         private MusicList ml;
         private List<string> musiclist = new List<string>();
@@ -31,6 +31,7 @@ namespace MusicPlayer.Tabs
             InitializeComponent();
             this.ml = ml;
             this.mainpage = mp;
+            ytb = new YoutubeAPI(mp.apiKey);
            
         }
         private async Task<string> streamInfo(string videoId)
@@ -48,7 +49,6 @@ namespace MusicPlayer.Tabs
                 MessageBox.Show(ex.Message);
                 return "";
             }
-            return null;
         }
         private async void ListMusic_Click(object sender, EventArgs e)
         {

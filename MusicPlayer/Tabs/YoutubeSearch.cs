@@ -16,15 +16,20 @@ namespace MusicPlayer.Tabs
 {
     public partial class YoutubeSearch : Form
     {
-        private YoutubeAPI ytb = new YoutubeAPI();
+
+        private YoutubeAPI ytb;
         private MusicList ml;
         private Mainpage mp;
+        public string apiKey { get; private set; }
 
         public YoutubeSearch(Mainpage mainpage, MusicList mp)
         {
             InitializeComponent();
             this.ml = mp;
             this.mp = mainpage;
+            this.apiKey = this.mp.apiKey;
+            ytb=new YoutubeAPI(apiKey); 
+            
         }
 
         private async Task<string> streamInfo(string videoId)
@@ -36,6 +41,7 @@ namespace MusicPlayer.Tabs
                 var streamManifest = await youtube.Videos.Streams.GetManifestAsync("https://youtube.com/watch?v=" + videoId);
                 var streamInfo = streamManifest.GetAudioOnlyStreams().GetWithHighestBitrate();
                 return streamInfo.Url;
+
             } catch (Exception ex)
             {
                 return "";

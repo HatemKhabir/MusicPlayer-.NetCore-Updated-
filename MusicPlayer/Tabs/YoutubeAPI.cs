@@ -29,24 +29,37 @@ namespace MusicPlayer
 
         public String musicid;
         public string nextPageToken = "";
-        public YouTubeService youtubeService = new YouTubeService(new BaseClientService.Initializer()
+        public YouTubeService youtubeService;
+        public YoutubeAPI(string apiKey)
         {
-            ApiKey = "AIzaSyD-eVP5VvZiygEc4yJ6wIZaAfaZdKjsWfk",
-            ApplicationName = "testouta"
-        });
+            youtubeService = new YouTubeService(new BaseClientService.Initializer()
+            {
+                ApiKey = apiKey,
+                ApplicationName = "Music Player"
+            });
+        }
 
-
+        
         //method to change the time format returned by duration method
         private String timeReFormat(string time)
         {
-            int minutes = 0;
-            if (time.Contains("M"))
-                minutes = int.Parse(time.Substring(2, time.IndexOf("M") - 2)); 
-            int seconds = 0;
-            if (time.Contains("S"))
-                seconds = int.Parse(time.Substring(time.IndexOf("M") + 1, time.IndexOf("S") - time.IndexOf("M") - 1));
+            try
+            {
+                int minutes = 0;
 
+                if (time.Contains("M"))
+                    minutes = int.Parse(time.Substring(2, time.IndexOf("M") - 2));
+                int seconds = 0;
+                 if (time.Contains("S"))
+                    seconds = int.Parse(time.Substring(time.IndexOf("M") + 1, time.IndexOf("S") - time.IndexOf("M") - 1));
             return minutes.ToString() + ":"+seconds ;
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("invalid time format");
+                return "00:00";
+
+            }
 
         }
         //retrieve music id from search button
@@ -204,7 +217,7 @@ namespace MusicPlayer
                     }
                 }catch(Exception ex)
                 {
-                    MessageBox.Show("ch9awlek thot lien yasla7 ? ");
+                    MessageBox.Show("Link should contain /playlist to work , api's fault ");
                 }
             }
             else

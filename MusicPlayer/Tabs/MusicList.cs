@@ -10,7 +10,7 @@ namespace MusicPlayer.Tabs
         private int i = 0;
         private Mainpage mainpage;
         private Home home;
-        private YoutubeAPI ytb = new YoutubeAPI();
+        private YoutubeAPI ytb;
         private List<String> ytbresults;
         public string musicname { get; set; }
         public LinkedList<String> songs { get; set; }
@@ -25,6 +25,7 @@ namespace MusicPlayer.Tabs
             player.PlayStateChange += new _WMPOCXEvents_PlayStateChangeEventHandler(Player_PlayStateChange);
             this.mainpage = mp;
             this.home = home;
+            ytb = new YoutubeAPI(mp.apiKey);
         }
 
         private void PlayFromImportedMusic(object sender, DataGridViewCellEventArgs e)

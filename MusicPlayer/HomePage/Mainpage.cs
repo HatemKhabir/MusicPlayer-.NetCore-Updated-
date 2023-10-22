@@ -14,7 +14,6 @@ namespace MusicPlayer.HomePage
     public partial class Mainpage : Form
     {
 
-        static YoutubeAPI ytb = new YoutubeAPI();
         private bool collapsedMedia = false;
         private bool collapsedPlaylist = false;
         private bool collapsedDownload = false;
@@ -23,12 +22,14 @@ namespace MusicPlayer.HomePage
         private Form? activeform = null;
         private YoutubePlaylist ytbPlaylist;
         public MusicList musiclist { get; }
+        public string apiKey { get; set; }
         private YoutubeSearch ytbsearch;
 
         public Mainpage(FirstPage firstpage)
         {
             InitializeComponent();
             this.firstpage = firstpage;
+            this.apiKey = firstpage.apiKey;
             homepage = new Home();
             musiclist = new MusicList(this, homepage);
             ytbsearch = new YoutubeSearch(this,musiclist);
@@ -36,7 +37,6 @@ namespace MusicPlayer.HomePage
             showForm(homepage);
 
         }
-
 
 
         public void showForm(Form child)
@@ -185,9 +185,17 @@ namespace MusicPlayer.HomePage
         }
         private void timer1_Tick(object sender, EventArgs e)
         {
-            timeLabel.Text = musiclist.currentpostStr();
-            slider.Value = (int)musiclist.currentpost();
-        }
+            try
+            {
+                timeLabel.Text = musiclist.currentpostStr();
+                slider.Value = (int)musiclist.currentpost();
+            }
+            catch(Exception ex) 
+            {
+                MessageBox.Show(ex.Message);
+
+            }
+            }
 
         private void volumeTrackBar2_Scroll(object sender, ScrollEventArgs e)
         {

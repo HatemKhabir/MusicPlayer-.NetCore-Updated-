@@ -14,7 +14,7 @@ namespace MusicPlayer.Tabs
         public string duration { get; set; }
         public string thumbnailURL { get; set; }
         private MusicList ml;
-        private YoutubeAPI ytb = new YoutubeAPI();
+        private YoutubeAPI ytb;
         private Mainpage mainpage;
        
 
@@ -23,7 +23,7 @@ namespace MusicPlayer.Tabs
             InitializeComponent();
             this.ml = ml;
             this.mainpage = mp;
-           
+            ytb = new YoutubeAPI(mp.apiKey);
         }
     
         public void changeImage(String musicname)
