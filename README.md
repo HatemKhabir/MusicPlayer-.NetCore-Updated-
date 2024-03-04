@@ -28,7 +28,7 @@ Either Clone the Project and run it and use it for your projects or you can down
 
 ### Installation
 
-1. Get a free API Key following this guid at [https://google.com](https://cloud.google.com/docs/authentication/api-keys)
+1. Get a free API Key following this guide at [https://google.com](https://cloud.google.com/docs/authentication/api-keys)
 
 2. Clone the repo
 
