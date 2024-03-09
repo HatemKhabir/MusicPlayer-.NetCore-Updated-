@@ -44,22 +44,27 @@ namespace MusicPlayer
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            if (ApiKey.Visible == true)
+            bool validApi = false;
+            while (validApi == false)
             {
-                this.apiKey = ApiKey.Text; // Get the API key from the user input
-                string filepath = "apikey.txt";
-                if (ValidateApiKey(apiKey))
+                if (ApiKey.Visible == true)
                 {
-                    MessageBox.Show("API key is valid");
-                    using (StreamWriter sw = File.AppendText(filepath))
+                    this.apiKey = ApiKey.Text; // Get the API key from the user input
+                    string filepath = "apikey.txt";
+                    if (ValidateApiKey(apiKey))
                     {
-                        sw.WriteLine(apiKey);
+                        validApi = true;
+                        MessageBox.Show("API key is valid");
+                        using (StreamWriter sw = File.AppendText(filepath))
+                        {
+                            sw.WriteLine(apiKey);
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("Invalid API key. Please enter a valid API key.");
                     }
                 }
-            else
-            {
-                MessageBox.Show("Invalid API key. Please enter a valid API key.");
-            }
             }
             mainpage = new Mainpage(this);
             mainpage.Show();

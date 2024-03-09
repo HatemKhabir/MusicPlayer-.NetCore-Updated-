@@ -68,6 +68,8 @@ namespace MusicPlayer
             List<string> songsId = new List<String>();
             musicName = new List<string>();
             thumbnails = new List<string>();
+            try
+            {
 
             var searchListRequest = youtubeService.Search.List("snippet");
             searchListRequest.Q = searchQuery; // Replace with your search term.
@@ -102,6 +104,11 @@ namespace MusicPlayer
                     songsId.Add(videoId);
                 }
             else MessageBox.Show("searchListResponse or searchListResponse.Items is not instantiated");
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message);
+            }
 
             return songsId;
 
@@ -135,7 +142,7 @@ namespace MusicPlayer
                 }
             }catch(Exception ex)
             {
-                MessageBox.Show("bellehi ken saret haja , maandi manaamel , enzel ok taw tetaada , merci");
+                MessageBox.Show(ex.Message);
             }
             return musicid;
         }

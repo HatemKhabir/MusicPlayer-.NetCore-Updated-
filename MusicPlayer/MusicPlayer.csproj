@@ -72,14 +72,15 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Google.Apis" Version="1.62.1" />
-    <PackageReference Include="Google.Apis.Auth" Version="1.62.1" />
-    <PackageReference Include="Google.Apis.Core" Version="1.62.1" />
-    <PackageReference Include="Google.Apis.YouTube.v3" Version="1.62.1.3205" />
-    <PackageReference Include="Guna.UI2.WinForms" Version="2.0.4.5" />
+    <PackageReference Include="Google.Apis" Version="1.67.0" />
+    <PackageReference Include="Google.Apis.Auth" Version="1.67.0" />
+    <PackageReference Include="Google.Apis.Core" Version="1.67.0" />
+    <PackageReference Include="Google.Apis.YouTube.v3" Version="1.67.0.3351" />
+    <PackageReference Include="Guna.UI2.WinForms" Version="2.0.4.6" />
+    <PackageReference Include="Microsoft.Windows.Compatibility" Version="8.0.2" />
     <PackageReference Include="SpotifyAPI.Web" Version="7.0.0" />
     <PackageReference Include="SpotifyAPI.Web.Auth" Version="7.0.0" />
-    <PackageReference Include="YoutubeExplode" Version="6.3.6" />
+    <PackageReference Include="YoutubeExplode" Version="6.3.13" />
   </ItemGroup>
 
 </Project>
