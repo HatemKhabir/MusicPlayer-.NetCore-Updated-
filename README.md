@@ -1,4 +1,6 @@
+## Demo 
 
+![](https://github.com/HatemKhabir/MusicPlayer-.NetCore-Updated-/blob/master/2024-03-09%2015-38-09%20(1).gif)
 
 ## Table Of Contents
 
