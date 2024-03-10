@@ -19,7 +19,7 @@
 A multi functional Youtube Music Player , Where User can Download and Play Music mp3 from youtube directly , and also it can download playlists as well !  
 
 ## Built With
-C# .NetCore , YoutubeExplode , Google Youtube Apis, Guna2UI Framework, C# WinForms
+C# .NetCore , YoutubeExplode , Google Youtube Apis, Guna2UI Framework, C# WinForms, Windows Media Player ( you need it enabled to use the project unfortuatnely)
 
 ## How To Use : 
 Either Clone the Project and run it and use it for your projects or you can download the ready version to try from here : 
